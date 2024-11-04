@@ -1,8 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>基于内网部署GPT-SoVITS服务API调用文档</title>
+    <url>/2024/10/19/587ac1c799a0</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这篇文档是API调用文档，以便查阅方便并不是部署搭建教程。</p>
+<h3 id="客户端API调用"><a href="#客户端API调用" class="headerlink" title="客户端API调用"></a>客户端API调用</h3><blockquote>
+<p>以下所有请求HOST均为下列内网，GET形式请按标准规定来拼接URL</p>
+</blockquote>
+<ul>
+<li><a class="link"   href="http://192.168.102.5:9880/" >http://192.168.102.5:9880/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ul>
+<h4 id="使用执行参数指定的参考音频"><a href="#使用执行参数指定的参考音频" class="headerlink" title="使用执行参数指定的参考音频"></a>使用执行参数指定的参考音频</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>text</td>
+<td>需要转语音文本</td>
+</tr>
+<tr>
+<td>text_language</td>
+<td>目标语言</td>
+</tr>
+</tbody></table>
+<h6 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="使用执行参数指定的参考音频并设定分割符号"><a href="#使用执行参数指定的参考音频并设定分割符号" class="headerlink" title="使用执行参数指定的参考音频并设定分割符号"></a>使用执行参数指定的参考音频并设定分割符号</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>text</td>
+<td>需要转语音文本</td>
+</tr>
+<tr>
+<td>text_language</td>
+<td>目标语言</td>
+</tr>
+<tr>
+<td>cut_punc</td>
+<td>分割字符</td>
+</tr>
+</tbody></table>
+<h4 id="GET-1"><a href="#GET-1" class="headerlink" title="GET"></a>GET</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST-1"><a href="#POST-1" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+<h4 id="手动指定当次推理所使用的参考音频"><a href="#手动指定当次推理所使用的参考音频" class="headerlink" title="手动指定当次推理所使用的参考音频"></a>手动指定当次推理所使用的参考音频</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>text</td>
+<td>需要转语音文本</td>
+</tr>
+<tr>
+<td>text_language</td>
+<td>目标语言</td>
+</tr>
+<tr>
+<td>cut_punc</td>
+<td>分割字符</td>
+</tr>
+<tr>
+<td>refer_wav_path</td>
+<td>参考音频</td>
+</tr>
+<tr>
+<td>prompt_text</td>
+<td>音频对应文本</td>
+</tr>
+<tr>
+<td>prompt_language</td>
+<td>音频对应语言</td>
+</tr>
+</tbody></table>
+<h6 id="GET-2"><a href="#GET-2" class="headerlink" title="GET"></a>GET</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">refer_wav_path=123.wav&amp;prompt_text=一二三。&amp;prompt_language=zh&amp;text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST-2"><a href="#POST-2" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;refer_wav_path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;123.wav&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;一二三。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+<ul>
+<li>成功: 直接返回 wav 音频流， http code 200</li>
+<li>失败: 返回包含错误信息的 json, http code 400</li>
+</ul>
+<h4 id="手动指定当次推理所使用的参考音频，并提供参数"><a href="#手动指定当次推理所使用的参考音频，并提供参数" class="headerlink" title="手动指定当次推理所使用的参考音频，并提供参数"></a>手动指定当次推理所使用的参考音频，并提供参数</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>text</td>
+<td>需要转语音文本</td>
+</tr>
+<tr>
+<td>text_language</td>
+<td>目标语言</td>
+</tr>
+<tr>
+<td>cut_punc</td>
+<td>分割字符</td>
+</tr>
+<tr>
+<td>refer_wav_path</td>
+<td>参考音频</td>
+</tr>
+<tr>
+<td>prompt_text</td>
+<td>音频对应文本</td>
+</tr>
+<tr>
+<td>prompt_language</td>
+<td>音频对应语言</td>
+</tr>
+<tr>
+<td>top_k</td>
+<td>在生成过程中从前 k 个最可能的候选项中进行选择</td>
+</tr>
+<tr>
+<td>top_p</td>
+<td>表示选择候选词的累积概率阈值</td>
+</tr>
+<tr>
+<td>temperature</td>
+<td>控制生成结果的随机性</td>
+</tr>
+<tr>
+<td>speed</td>
+<td>控制播放速度</td>
+</tr>
+<tr>
+<td>inp_refs</td>
+<td>音频文件路径的数组</td>
+</tr>
+</tbody></table>
+<h6 id="GET-3"><a href="#GET-3" class="headerlink" title="GET"></a>GET</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">refer_wav_path=123.wav&amp;prompt_text=一二三。&amp;prompt_language=zh&amp;text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。&amp;top_k=20&amp;top_p=0.6&amp;temperature=0.6&amp;speed=1&amp;inp_refs=&quot;456.wav&quot;&amp;inp_refs=&quot;789.wav</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST-3"><a href="#POST-3" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;refer_wav_path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;123.wav&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;一二三。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;top_k&quot;</span><span class="punctuation">:</span> <span class="number">20</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;top_p&quot;</span><span class="punctuation">:</span> <span class="number">0.6</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;temperature&quot;</span><span class="punctuation">:</span> <span class="number">0.6</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;speed&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;inp_refs&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;456.wav&quot;</span><span class="punctuation">,</span><span class="string">&quot;789.wav&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+<ul>
+<li>成功: 直接返回 wav 音频流， http code 200</li>
+<li>失败: 返回包含错误信息的 json, http code 400</li>
+</ul>
+<h4 id="简单的Axios调用示例"><a href="#简单的Axios调用示例" class="headerlink" title="简单的Axios调用示例"></a>简单的Axios调用示例</h4><blockquote>
+<p>需要ffmpeg环境支持，请自行安装</p>
+</blockquote>
+<div class="highlight-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&#x27;axios&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Speaker</span> = <span class="built_in">require</span>(<span class="string">&#x27;speaker&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> ffmpeg = <span class="built_in">require</span>(<span class="string">&#x27;fluent-ffmpeg&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建 Speaker 实例来播放解码后的 PCM 音频流</span></span><br><span class="line"><span class="keyword">const</span> speaker = <span class="keyword">new</span> <span class="title class_">Speaker</span>(&#123;</span><br><span class="line">    <span class="attr">channels</span>: <span class="number">2</span>,          <span class="comment">// 立体声</span></span><br><span class="line">    <span class="attr">bitDepth</span>: <span class="number">16</span>,         <span class="comment">// 16 位</span></span><br><span class="line">    <span class="attr">sampleRate</span>: <span class="number">44100</span>     <span class="comment">// 44.1kHz 采样率</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 请求流式音频并处理的函数</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">streamOggAudio</span> = <span class="keyword">async</span> (<span class="params">url</span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="title function_">axios</span>(&#123;</span><br><span class="line">            <span class="attr">method</span>: <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: url,</span><br><span class="line">            <span class="attr">responseType</span>: <span class="string">&#x27;stream&#x27;</span></span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;开始ffmpeg流式转换格式，OGG-&gt;PCM&quot;</span>)</span><br><span class="line">        <span class="comment">// 使用 FFmpeg 转换 OGG 流并播放</span></span><br><span class="line">        <span class="title function_">ffmpeg</span>(response.<span class="property">data</span>)</span><br><span class="line">            .<span class="title function_">format</span>(<span class="string">&#x27;s16le&#x27;</span>) <span class="comment">// 指定输出格式为 PCM</span></span><br><span class="line">            .<span class="title function_">audioChannels</span>(<span class="number">2</span>) <span class="comment">// 设置为立体声</span></span><br><span class="line">            .<span class="title function_">audioFrequency</span>(<span class="number">44100</span>) <span class="comment">// 设置采样率为 44.1kHz</span></span><br><span class="line">            .<span class="title function_">pipe</span>(speaker, &#123; <span class="attr">end</span>: <span class="literal">true</span> &#125;) <span class="comment">// 将转换后的音频流传递给 Speaker</span></span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;Error streaming audio:&#x27;</span>, error);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> text = <span class="string">`先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。`</span></span><br><span class="line"><span class="keyword">const</span> audioUrl = <span class="string">`http://192.168.102.5:9880?text=<span class="subst">$&#123;text&#125;</span>&amp;text_language=zh`</span>;</span><br><span class="line">!(<span class="title function_">async</span> ()=&gt;&#123;</span><br><span class="line">    <span class="keyword">await</span> <span class="title function_">streamOggAudio</span>(audioUrl);</span><br><span class="line">&#125;)()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h3><h4 id="api-py-启动参数列表"><a href="#api-py-启动参数列表" class="headerlink" title="api.py 启动参数列表"></a>api.py 启动参数列表</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+<th>可选值</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-s</td>
+<td>SoVITS模型路径</td>
+<td>依据实际需求</td>
+<td>config.py中指定</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>GPT模型路径</td>
+<td>依据实际需求</td>
+<td>config.py中指定</td>
+</tr>
+<tr>
+<td>-dr</td>
+<td>默认参考音频路径</td>
+<td>依据实际需求</td>
+<td>-dr “wavs&#x2F;1.wav”</td>
+</tr>
+<tr>
+<td>-dt</td>
+<td>默认参考音频文本</td>
+<td>依据实际需求</td>
+<td>-dt “你好，我是大白”</td>
+</tr>
+<tr>
+<td>-dl</td>
+<td>默认参考音频语种</td>
+<td>“zh”,”en”,”ja”,”ko”,”yue”</td>
+<td>-dl “zh”</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>推理设备</td>
+<td>“cuda”,”cpu”</td>
+<td>-d “cpu”</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>监听地址</td>
+<td>依据实际需求</td>
+<td>-a “0.0.0.0”</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>监听端口</td>
+<td>依据实际需求</td>
+<td>-p 9880</td>
+</tr>
+<tr>
+<td>-fp</td>
+<td>覆盖 config.py 使用全精度</td>
+<td>依据实际需求</td>
+<td></td>
+</tr>
+<tr>
+<td>-hp</td>
+<td>覆盖 config.py 使用半精度</td>
+<td>依据实际需求</td>
+<td></td>
+</tr>
+<tr>
+<td>-sm</td>
+<td>式返回模式, 默认不启用</td>
+<td>“c”,”n”</td>
+<td>-sm “n”</td>
+</tr>
+<tr>
+<td>-mt</td>
+<td>返回的音频编码格式, 流式默认ogg, 非流式默认wav</td>
+<td>“wav”, “ogg”, “aac”</td>
+<td>-mt “ogg”</td>
+</tr>
+<tr>
+<td>-st</td>
+<td>返回的音频数据类型, 默认int16</td>
+<td>“int16”, “int32”</td>
+<td>-st “int32”</td>
+</tr>
+<tr>
+<td>-cp</td>
+<td>文本切分符号设定, 默认为空</td>
+<td>“,.，。”</td>
+<td>-cp “,.，。”</td>
+</tr>
+<tr>
+<td>-hb</td>
+<td>cnhubert路径</td>
+<td>依据实际需求</td>
+<td></td>
+</tr>
+<tr>
+<td>-b</td>
+<td>bert路径</td>
+<td>依据实际需求</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="运行前准备"><a href="#运行前准备" class="headerlink" title="运行前准备"></a>运行前准备</h3><h4 id="debian-ubuntu-安装screen"><a href="#debian-ubuntu-安装screen" class="headerlink" title="debian&#x2F;ubuntu 安装screen"></a>debian&#x2F;ubuntu 安装screen</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install screen -y</span><br></pre></td></tr></table></figure></div>
+<h4 id="新建screen"><a href="#新建screen" class="headerlink" title="新建screen"></a>新建screen</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line">screen -S GPTSoVits</span><br></pre></td></tr></table></figure></div>
+<h4 id="激活conda环境"><a href="#激活conda环境" class="headerlink" title="激活conda环境"></a>激活conda环境</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line">conda activate GPTSoVits</span><br></pre></td></tr></table></figure></div>
+<h4 id="服务端启动示例"><a href="#服务端启动示例" class="headerlink" title="服务端启动示例"></a>服务端启动示例</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line">python api.py -dr &quot;wavs/1.wav&quot; -dt &quot;大家也叫我三月、小三月…你呢？你想叫我什么？&quot; -dl &quot;zh&quot; -d &quot;cpu&quot; -a &quot;0.0.0.0&quot; -p 9880 -sm &quot;n&quot; -cp &quot;,.，。&quot;</span><br></pre></td></tr></table></figure></div>
+<h4 id="保存screen会话"><a href="#保存screen会话" class="headerlink" title="保存screen会话"></a>保存screen会话</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">ctrl+a+d</span><br></pre></td></tr></table></figure></div>
+<h4 id="查看监听端口信息"><a href="#查看监听端口信息" class="headerlink" title="查看监听端口信息"></a>查看监听端口信息</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line">netstat -anp | grep 9880</span><br></pre></td></tr></table></figure></div>
+<h4 id="开放防火墙端口"><a href="#开放防火墙端口" class="headerlink" title="开放防火墙端口"></a>开放防火墙端口</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="code"><pre><span class="line">sudo ufw allow 9880</span><br></pre></td></tr></table></figure></div>]]></content>
+      <tags>
+        <tag>GPT-SoVIIS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
-    <url>/2024/11/04/8ed558e848a6/</url>
+    <url>/2024/11/04/8ed558e848a6</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a =<span class="number">1</span> ;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a)</span><br></pre></td></tr></table></figure></div>
 
