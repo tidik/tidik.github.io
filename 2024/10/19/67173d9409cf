@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://tidik.github.io/2024/10/19/587ac1c799a0"/>
+    <link rel="canonical" href="https://tidik.github.io/2024/10/19/67173d9409cf"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -21,7 +21,7 @@
         <meta name="description" content="前言这篇文档是API调用文档，以便查阅方便并不是部署搭建教程。 客户端API调用 以下所有请求HOST均为下列内网，GET形式请按标准规定来拼接URL   http:&#x2F;&#x2F;192.168.102.5:9880&#x2F;   使用执行参数指定的参考音频   参数 含义    text 需要转语音文本   text_language 目标语言   GET1text&#x3D;天姥连天向天横，势拔五岳掩赤城。&amp;te">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于内网部署GPT-SoVITS服务API调用文档">
-<meta property="og:url" content="https://tidik.github.io/2024/10/19/587ac1c799a0">
+<meta property="og:url" content="https://tidik.github.io/2024/10/19/67173d9409cf">
 <meta property="og:site_name" content="BaLEE‘S Notes">
 <meta property="og:description" content="前言这篇文档是API调用文档，以便查阅方便并不是部署搭建教程。 客户端API调用 以下所有请求HOST均为下列内网，GET形式请按标准规定来拼接URL   http:&#x2F;&#x2F;192.168.102.5:9880&#x2F;   使用执行参数指定的参考音频   参数 含义    text 需要转语音文本   text_language 目标语言   GET1text&#x3D;天姥连天向天横，势拔五岳掩赤城。&amp;te">
 <meta property="og:locale" content="zh_CN">
@@ -553,7 +553,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -561,7 +561,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">4</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -941,7 +941,7 @@
             </li>
         
         <li>
-            <strong>链接:</strong> https://tidik.github.io/2024/10/19/587ac1c799a0
+            <strong>链接:</strong> https://tidik.github.io/2024/10/19/67173d9409cf
         </li>
         <li>
             <strong>
@@ -975,18 +975,27 @@
     <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
     </div>
-    <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/11/04/8ed558e848a6" title="Hello World" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Hello World" class="!max-w-none">
-  <span class="title">Hello World</span>
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
+  <img src="https://raw.githubusercontent.com/tidik/images/main/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
+  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
+</a><a class="recommended-article-item" href="/2023/11/15/b7caeb428844" title="Centos7下安装docker和docker-compose" rel="bookmark">
+  <img src="https://raw.githubusercontent.com/tidik/images/main/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
+  <span class="title">Centos7下安装docker和docker-compose</span>
+</a><a class="recommended-article-item" href="/2024/03/20/c471c461c92a" title="Quantumult X下JS签到脚本开发全过程" rel="bookmark">
+  <img src="https://raw.githubusercontent.com/tidik/images/main//623038066.png" alt="Quantumult X下JS签到脚本开发全过程" class="!max-w-none">
+  <span class="title">Quantumult X下JS签到脚本开发全过程</span>
 </a></div>
    </div>
    <div class="recommended-mobile">
    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
    </div>
-   <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/11/04/8ed558e848a6" title="Hello World" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="Hello World" class="!max-w-none">
-  <span class="title">Hello World</span>
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
+  <img src="https://raw.githubusercontent.com/tidik/images/main/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
+  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
+</a><a class="recommended-article-item" href="/2023/11/15/b7caeb428844" title="Centos7下安装docker和docker-compose" rel="bookmark">
+  <img src="https://raw.githubusercontent.com/tidik/images/main/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
+  <span class="title">Centos7下安装docker和docker-compose</span>
 </a></div>
    </div>
   </div>
@@ -994,21 +1003,21 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2024/11/04/8ed558e848a6"
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/04/02/a5caa24dd309"
                         >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Hello World</span>
-                                <span class="post-nav-item">上一篇</span>
+                                <span class="post-nav-title-item">基于DNS解析分流实现CDN国内外加速与防御</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
                             </span>
                         </a>
                     </div>
-                
                 
             </div>
         
