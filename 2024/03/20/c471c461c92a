@@ -25,17 +25,17 @@
 <meta property="og:site_name" content="BaLEE‘S Notes">
 <meta property="og:description" content="前言近期刚开始学习JavaScript，恰巧看到 青龙面板&amp;圈X(Quantumult X)定时任务的脚本也是用JS编写，所幸找了一个简单的签到案例分析一下，顺便检验一下自己的近期JS学习成果。 声明 以下内容中不含有任何非法修改服务器数据的行为，仅仅是本地用JS代码模拟人类点击的效果完成相关功能。  1.思路分析在我个人理解来看，所谓的“每日签到”功能，就是当人点击某个按钮后触发了一个事">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/tidik/images/main//623038066.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/tidik/images/main//1065721195.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/tidik/images/main//3014617783.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/tidik/images/main//127119554.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/tidik/images/main//1421599739.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images//623038066.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images//1065721195.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images//3014617783.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images//127119554.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images//1421599739.png">
 <meta property="article:published_time" content="2024-03-20T07:35:22.000Z">
-<meta property="article:modified_time" content="2024-11-04T16:05:35.805Z">
+<meta property="article:modified_time" content="2024-11-05T02:42:14.359Z">
 <meta property="article:author" content="Bachelor LEE">
 <meta property="article:tag" content="QuantumultX,JS">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/tidik/images/main//623038066.png">
+<meta name="twitter:image" content="https://cdn.inik.cc/gh/tidik/images//623038066.png">
     
     
     <!--- Icon Part-->
@@ -594,7 +594,7 @@
             
                 
                 
-                <img src="https://raw.githubusercontent.com/tidik/images/main//623038066.png" alt="Quantumult X下JS签到脚本开发全过程" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
+                <img src="https://cdn.inik.cc/gh/tidik/images/623038066.png" alt="Quantumult X下JS签到脚本开发全过程" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
                 
                 <div class="w-full flex items-center absolute bottom-0 justify-start">
                     <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">Quantumult X下JS签到脚本开发全过程</h1>
@@ -625,8 +625,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-05 00:05:35</span>
-            <span class="mobile">2024-11-05 00:05:35</span>
+            <span class="desktop">2024-11-05 10:42:14</span>
+            <span class="mobile">2024-11-05 10:42:14</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -653,7 +653,7 @@
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>22 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>21 分钟</span>
         </span>
     
     
@@ -680,7 +680,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/tidik/images/main//623038066.png"
+                     data-src="https://cdn.inik.cc/gh/tidik/images//623038066.png"
                       alt="微信截图_20240320135823.png"
                 ></p>
 <h3 id="2-开始实施"><a href="#2-开始实施" class="headerlink" title="2.开始实施"></a>2.开始实施</h3><blockquote>
@@ -692,12 +692,12 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/tidik/images/main//1065721195.jpg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images//1065721195.jpg"
                       alt="微信图片编辑_20240320142414.jpg"
                 ><br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/tidik/images/main//3014617783.png"
+                     data-src="https://cdn.inik.cc/gh/tidik/images//3014617783.png"
                       alt="请求体_20240320143514.png"
                 ></p>
 <p>通过分析抓取的请求记录，我们可以看到很多相关信息，其中请求头中携带非常见的字段，一般多为重要信息，图中携带了”KUMI-TOKEN”、”PROJECT-ID”、”PLATFORM”三个特殊字段。再查看以下请求体，里面携带了一个json数据，所以我们把它们暂且保留下来，以便于后面的调试使用。</p>
@@ -705,12 +705,12 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/tidik/images/main//127119554.png"
+                     data-src="https://cdn.inik.cc/gh/tidik/images//127119554.png"
                       alt="jjy_20240320144132.png"
                 ><br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/tidik/images/main//1421599739.png"
+                     data-src="https://cdn.inik.cc/gh/tidik/images//1421599739.png"
                       alt="jjybody_20240320144321.png"
                 ></p>
 <p>红色区域为抓取的header字段，Body区域填入抓取到的json数据，填写完毕后，点击send后。</p>
@@ -751,7 +751,6 @@
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostname = mole-mmp-scrm.jiajiayue.com</span><br></pre></td></tr></table></figure></div>
 
 <p>到这一步，配置完以上内容后就可以打开MITM和重写选项，再到对应签到界面就能自动抓取token等相关参数，然后执行定时任务了。</p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>书写本文的原因，一方面是记录最近自己学习Javascript的短期成果，另一方面是给像我一样从小白入门开始学习JS的人一点点思路。其实学习并不难，难的是不愿意行动。最后祝大家健康生活，学习愉快！</p>
 
         </div>
 
@@ -766,7 +765,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-11-05 00:05:35
+                    :</strong> 2024-11-05 10:42:14
             </li>
         
         <li>
@@ -804,12 +803,12 @@
     <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
     </div>
-    <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
-  <img src="https://raw.githubusercontent.com/tidik/images/main/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
-  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
-</a><a class="recommended-article-item" href="/2024/10/19/67173d9409cf" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
-  <img src="https://raw.githubusercontent.com/tidik/images/main/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="!max-w-none">
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/10/19/67173d9409cf" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="!max-w-none">
   <span class="title">基于内网部署GPT-SoVITS服务API调用文档</span>
+</a><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
+  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
 </a><a class="recommended-article-item" href="/2023/11/15/b7caeb428844" title="Centos7下安装docker和docker-compose" rel="bookmark">
   <img src="https://raw.githubusercontent.com/tidik/images/main/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
   <span class="title">Centos7下安装docker和docker-compose</span>
@@ -819,12 +818,12 @@
    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
    </div>
-   <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
-  <img src="https://raw.githubusercontent.com/tidik/images/main/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
-  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
-</a><a class="recommended-article-item" href="/2024/10/19/67173d9409cf" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
-  <img src="https://raw.githubusercontent.com/tidik/images/main/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="!max-w-none">
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/10/19/67173d9409cf" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="!max-w-none">
   <span class="title">基于内网部署GPT-SoVITS服务API调用文档</span>
+</a><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
+  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
 </a></div>
    </div>
   </div>
@@ -876,7 +875,7 @@
     <div class="post-toc">
         <div class="toc-title">目录</div>
         <div class="page-title">Quantumult X下JS签到脚本开发全过程</div>
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E"><span class="nav-text">声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90"><span class="nav-text">1.思路分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%BC%80%E5%A7%8B%E5%AE%9E%E6%96%BD"><span class="nav-text">2.开始实施</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%8A%93%E5%8C%85"><span class="nav-text">2.1 移动端抓包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-PC%E7%AB%AF%E8%B0%83%E8%AF%95"><span class="nav-text">2.2 PC端调试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%BC%96%E5%86%99JS%E8%84%9A%E6%9C%AC"><span class="nav-text">3.编写JS脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="nav-text">3.1 定义全局变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-%E5%BC%95%E5%85%A5OpenAPI"><span class="nav-text">3.2 引入OpenAPI</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E7%BC%96%E5%86%99%E7%AD%BE%E5%88%B0%E5%87%BD%E6%95%B0"><span class="nav-text">3.3 编写签到函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-%E7%BC%96%E5%86%99Quantumult-X-%E4%B8%8B%E8%8E%B7%E5%8F%96token%E5%87%BD%E6%95%B0"><span class="nav-text">3.4 编写Quantumult X 下获取token函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-%E7%BB%9F%E4%B8%80%E8%B0%83%E7%94%A8"><span class="nav-text">3.5 统一调用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6-%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="nav-text">3.6 完整代码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E9%85%8D%E7%BD%AEQuantumult-X"><span class="nav-text">4.配置Quantumult X</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-%E9%85%8D%E7%BD%AE%E9%87%8D%E5%86%99"><span class="nav-text">4.1 配置重写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-%E9%85%8D%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="nav-text">4.2 配置定时任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-%E9%85%8D%E7%BD%AEMITM"><span class="nav-text">4.3 配置MITM</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-text">结语</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E"><span class="nav-text">声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%80%9D%E8%B7%AF%E5%88%86%E6%9E%90"><span class="nav-text">1.思路分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%BC%80%E5%A7%8B%E5%AE%9E%E6%96%BD"><span class="nav-text">2.开始实施</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%8A%93%E5%8C%85"><span class="nav-text">2.1 移动端抓包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-PC%E7%AB%AF%E8%B0%83%E8%AF%95"><span class="nav-text">2.2 PC端调试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%BC%96%E5%86%99JS%E8%84%9A%E6%9C%AC"><span class="nav-text">3.编写JS脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="nav-text">3.1 定义全局变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-%E5%BC%95%E5%85%A5OpenAPI"><span class="nav-text">3.2 引入OpenAPI</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E7%BC%96%E5%86%99%E7%AD%BE%E5%88%B0%E5%87%BD%E6%95%B0"><span class="nav-text">3.3 编写签到函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-%E7%BC%96%E5%86%99Quantumult-X-%E4%B8%8B%E8%8E%B7%E5%8F%96token%E5%87%BD%E6%95%B0"><span class="nav-text">3.4 编写Quantumult X 下获取token函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-%E7%BB%9F%E4%B8%80%E8%B0%83%E7%94%A8"><span class="nav-text">3.5 统一调用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6-%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="nav-text">3.6 完整代码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E9%85%8D%E7%BD%AEQuantumult-X"><span class="nav-text">4.配置Quantumult X</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-%E9%85%8D%E7%BD%AE%E9%87%8D%E5%86%99"><span class="nav-text">4.1 配置重写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-%E9%85%8D%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="nav-text">4.2 配置定时任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-%E9%85%8D%E7%BD%AEMITM"><span class="nav-text">4.3 配置MITM</span></a></li></ol></li></ol>
 
     </div>
 </div>
