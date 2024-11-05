@@ -13,24 +13,38 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://blog.inik.cc/2023/11/15/b7caeb428844"/>
+    <link rel="canonical" href="https://blog.inik.cc/2024/04/02/a5caa24dd309.html"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="介绍 Docker Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows操作系统的机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。   Docker-compose Docker-compose 是用于定义和运行多容器 Docker 应用程序的工具。通过 Compose，您可以使">
+        <meta name="description" content="前言由于众所周知的原因，网站部署在境内服务器上，境外用户访问总会出一些奇奇怪怪的原因。再者，绝大多数对服务器的恶意攻击都来自境外IP，为了实现网站防护，同时提升国内外用户体验感，特以此文记录，以备后续参考。 #整体流程 1. 关于CDN1.1 什么是CDN内容分发网络（CDN）是一个互连服务器网络，可加快数据密集型应用程序的网页加载速度。CDN 可以表示内容分发网络或内容分配网络。当用户访问某个网">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Centos7下安装docker和docker-compose">
-<meta property="og:url" content="https://blog.inik.cc/2023/11/15/b7caeb428844">
+<meta property="og:title" content="基于DNS解析分流实现CDN国内外加速与防御">
+<meta property="og:url" content="https://blog.inik.cc/2024/04/02/a5caa24dd309.html">
 <meta property="og:site_name" content="BaLEE‘S Notes">
-<meta property="og:description" content="介绍 Docker Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows操作系统的机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。   Docker-compose Docker-compose 是用于定义和运行多容器 Docker 应用程序的工具。通过 Compose，您可以使">
+<meta property="og:description" content="前言由于众所周知的原因，网站部署在境内服务器上，境外用户访问总会出一些奇奇怪怪的原因。再者，绝大多数对服务器的恶意攻击都来自境外IP，为了实现网站防护，同时提升国内外用户体验感，特以此文记录，以备后续参考。 #整体流程 1. 关于CDN1.1 什么是CDN内容分发网络（CDN）是一个互连服务器网络，可加快数据密集型应用程序的网页加载速度。CDN 可以表示内容分发网络或内容分配网络。当用户访问某个网">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/2069457946.png">
-<meta property="article:published_time" content="2023-11-14T16:22:28.000Z">
-<meta property="article:modified_time" content="2024-11-05T06:46:17.158Z">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/3780368673.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/3765866439.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/4020552366.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/544052555.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/2369516591.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/3705857194.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/1298590996.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/1921466730.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/1192126118.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/1682049828.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/614848999.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/582320550.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/650752115.png">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/3522988742.png">
+<meta property="article:published_time" content="2024-04-02T09:07:00.000Z">
+<meta property="article:modified_time" content="2024-11-05T02:42:03.050Z">
 <meta property="article:author" content="Bachelor LEE">
+<meta property="article:tag" content="CDN,Cloudflare">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.inik.cc/gh/tidik/images/2069457946.png">
+<meta name="twitter:image" content="https://cdn.inik.cc/gh/tidik/images/3780368673.png">
     
     
     <!--- Icon Part-->
@@ -42,7 +56,7 @@
     
     <title>
         
-            Centos7下安装docker和docker-compose | BaLEE‘S Notes
+            基于DNS解析分流实现CDN国内外加速与防御 | BaLEE‘S Notes
         
     </title>
 
@@ -589,10 +603,10 @@
             
                 
                 
-                <img src="https://cdn.inik.cc/gh/tidik/images/2069457946.png" alt="Centos7下安装docker和docker-compose" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
+                <img src="https://cdn.inik.cc/gh/tidik/images/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
                 
                 <div class="w-full flex items-center absolute bottom-0 justify-start">
-                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">Centos7下安装docker和docker-compose</h1>
+                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">基于DNS解析分流实现CDN国内外加速与防御</h1>
                 </div>
             
             </div>
@@ -613,31 +627,42 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-11-15 00:22:28</span>
-        <span class="mobile">2023-11-15 00:22:28</span>
+        <span class="desktop">2024-04-02 17:07</span>
+        <span class="mobile">2024-04-02 17:07</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-05 14:46:17</span>
-            <span class="mobile">2024-11-05 14:46:17</span>
+            <span class="desktop">2024-11-05 10:42:03</span>
+            <span class="mobile">2024-11-05 10:42:03</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
     
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/CDN-Cloudflare/">CDN,Cloudflare</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
 
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>363 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.2k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>4 分钟</span>
         </span>
     
     
@@ -656,47 +681,144 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><ul>
-<li>Docker<blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows操作系统的机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>由于众所周知的原因，网站部署在境内服务器上，境外用户访问总会出一些奇奇怪怪的原因。再者，绝大多数对服务器的恶意攻击都来自境外IP，为了实现网站防护，同时提升国内外用户体验感，特以此文记录，以备后续参考。</p>
+<h3 id="整体流程"><a href="#整体流程" class="headerlink" title="#整体流程"></a>#整体流程</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/3780368673.png"
+                      alt="Snipaste_2024-04-02_16-58-39.png"
+                ></p>
+<h3 id="1-关于CDN"><a href="#1-关于CDN" class="headerlink" title="1. 关于CDN"></a>1. 关于CDN</h3><h4 id="1-1-什么是CDN"><a href="#1-1-什么是CDN" class="headerlink" title="1.1 什么是CDN"></a>1.1 什么是CDN</h4><p>内容分发网络（CDN）是一个互连服务器网络，可加快数据密集型应用程序的网页加载速度。CDN 可以表示内容分发网络或内容分配网络。当用户访问某个网站时，来自该网站服务器的数据必须通过互联网传输到用户的计算机。如果用户距离该服务器较远，则加载大文件（例如视频或网站图像）将需要很长时间。相反，如果网站内容存储在距离用户较近的 CDN 服务器上，就可以更快到达他们的计算机。</p>
+<h4 id="1-2-为什么CDN很重要"><a href="#1-2-为什么CDN很重要" class="headerlink" title="1.2 为什么CDN很重要"></a>1.2 为什么CDN很重要</h4><p>内容分发网络（CDN）的主要目的是减少延迟，或减少由网络设计造成的通信延迟。由于互联网的全球性和复杂性，网站（服务器）与其用户（客户端）之间的通信流量必须跨越很长的物理距离。通信也是双向的，从客户端向服务器发送请求，服务器返回响应。CDN 通过在客户端和网站服务器之间引入中间服务器来提高效率。这些 CDN 服务器将管理客户端与服务器之间的一些通信。它们可以降低传送到 Web 服务器的 Web 流量、减少带宽消耗，并改善应用程序的用户体验。</p>
+<h4 id="1-3-CDN的优势有哪些"><a href="#1-3-CDN的优势有哪些" class="headerlink" title="1.3 CDN的优势有哪些"></a>1.3 CDN的优势有哪些</h4><blockquote>
+<p>内容分发网络（CDN）具有众多优势，可以提高网站性能并支持核心网络基础设施。</p>
 </blockquote>
-</li>
-<li>Docker-compose<blockquote>
-<p>Docker-compose 是用于定义和运行多容器 Docker 应用程序的工具。通过 Compose，您可以使用 YML 文件来配置应用程序需要的所有服务。然后，使用一个命令，就可以从 YML 文件配置中创建并启动所有服务。</p>
+<p>**加快页面加载速度 **</p>
+<p>如果您的页面加载速度太慢，网站流量可能会减少。CDN 可以降低跳出率并增加用户在您网站上停留的时间。</p>
+<p><strong>降低带宽成本</strong></p>
+<p>带宽成本是一笔巨大的开支，因为每个传入的网站请求都会消耗网络带宽。通过缓存和其他优化，CDN 可以减少原始服务器必须提供的数据量，从而降低网站所有者的托管成本。</p>
+<p><strong>提高内容可用性</strong></p>
+<p>同一时间的访客过多或网络硬件故障可能会导致网站崩溃。CDN 服务可以处理更多 Web 流量并降低 Web 服务器的负载。此外，如果一台或多台 CDN 服务器离线，其他运营服务器可以替换它们，以确保服务不中断。</p>
+<p><strong>提高网站安全性</strong></p>
+<p>分布式拒绝服务（DDoS）攻击试图通过向网站发送大量虚假流量来关闭应用程序。CDN 可以通过在多个中间服务器之间分配负载来处理此类流量峰值，从而降低对原始服务器的影响。</p>
+<h4 id="1-4-常见CDN提供商"><a href="#1-4-常见CDN提供商" class="headerlink" title="1.4 常见CDN提供商"></a>1.4 常见CDN提供商</h4><p><strong>国内</strong></p>
+<p>阿里云、腾讯云、又拍云、七牛云等等</p>
+<p><strong>国外</strong></p>
+<p>CloudFlare（以下简称CF）等等</p>
+<p><strong>tips:</strong></p>
+<blockquote>
+<p>笔者用的<strong>又拍云</strong>（云联盟免费）+ <strong>CloudFlare</strong>（个人用户免费）</p>
 </blockquote>
-</li>
+<h3 id="2-前期准备"><a href="#2-前期准备" class="headerlink" title="2. 前期准备"></a>2. 前期准备</h3><ul>
+<li><strong>域名</strong></li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/yaml-intro.html"> <strong>如果不了解 <code>YML</code></strong> 请点击这里 </a></p>
-<p>上面简单介绍了一下相关内容，下面我们着手开始安装Docker与Docker-compose</p>
-<h3 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h3><ul>
-<li>Centos 7</li>
-<li>Xshell</li>
-<li>root用户</li>
+<p>域名需要准备两个，一个备案，一个不备案。</p>
+<ul>
+<li><strong>云服务器</strong></li>
 </ul>
-<h3 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h3><p>1.更新系统组件</p>
-<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update -y</span><br></pre></td></tr></table></figure></div>
-<p>2.安装wget及curl</p>
-<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget curl</span><br></pre></td></tr></table></figure></div>
-<p>3.拉取Docker安装脚本</p>
-<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- get.docker.com | bash</span><br></pre></td></tr></table></figure></div>
-<p>4.下载Docker-compose二进制文件</p>
-<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L &quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure></div>
-<p>5.启动Docker及设置开机自启</p>
-<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker #启动docker</span><br><span class="line">systemctl enable docker #设置开机自启</span><br></pre></td></tr></table></figure></div>
-<p>6.赋予Docker-compose可执行权限</p>
-<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure></div>
-
-<p>7.查看docker及docker-compose版本信息</p>
-<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker --version</span><br><span class="line">docker-compose --version</span><br></pre></td></tr></table></figure></div>
-<h3 id="安装成功"><a href="#安装成功" class="headerlink" title="安装成功"></a>安装成功</h3><blockquote>
-<p>看到下图则说明已经安装成功</p>
+<p>搭建必须的运行环境并部署网站。</p>
+<ul>
+<li><strong>域名解析管理</strong></li>
+</ul>
+<p>负责域名的解析（笔者用的阿里万网DNS解析）</p>
+<ul>
+<li><strong>CloudFlare账号</strong></li>
+</ul>
+<p>将未备案的域名添加到CF并解析。</p>
+<h3 id="3-配置国内CDN"><a href="#3-配置国内CDN" class="headerlink" title="3. 配置国内CDN"></a>3. 配置国内CDN</h3><h4 id="3-1-创建CDN服务"><a href="#3-1-创建CDN服务" class="headerlink" title="3.1 创建CDN服务"></a>3.1 创建CDN服务</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/3765866439.png"
+                      alt="Snipaste_2024-04-02_14-52-41.png"
+                ></p>
+<h4 id="3-2-将域名解析到CDN"><a href="#3-2-将域名解析到CDN" class="headerlink" title="3.2 将域名解析到CDN"></a>3.2 将域名解析到CDN</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/4020552366.png"
+                      alt="Snipaste_2024-04-02_14-57-21.png"
+                ></p>
+<h4 id="3-3-配置HTTPS"><a href="#3-3-配置HTTPS" class="headerlink" title="3.3 配置HTTPS"></a>3.3 配置HTTPS</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/544052555.png"
+                      alt="Snipaste_2024-04-02_15-00-52.png"
+                ></p>
+<h4 id="3-4-检测配置结果"><a href="#3-4-检测配置结果" class="headerlink" title="3.4 检测配置结果"></a>3.4 检测配置结果</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/2369516591.png"
+                      alt="Snipaste_2024-04-02_15-04-40.png"
+                ></p>
+<h3 id="4-配置国外CDN"><a href="#4-配置国外CDN" class="headerlink" title="4. 配置国外CDN"></a>4. 配置国外CDN</h3><h4 id="4-1-解析未备案域名到CF"><a href="#4-1-解析未备案域名到CF" class="headerlink" title="4.1 解析未备案域名到CF"></a>4.1 解析未备案域名到CF</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/3705857194.png"
+                      alt="Snipaste_2024-04-02_15-10-12.png"
+                ></p>
+<h4 id="4-2-配置DNS解析"><a href="#4-2-配置DNS解析" class="headerlink" title="4.2 配置DNS解析"></a>4.2 配置DNS解析</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/1298590996.png"
+                      alt="Snipaste_2024-04-02_15-16-03.png"
+                ></p>
+<h4 id="4-3-添加自定义主机名"><a href="#4-3-添加自定义主机名" class="headerlink" title="4.3 添加自定义主机名"></a>4.3 添加自定义主机名</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/1921466730.png"
+                      alt="Snipaste_2024-04-02_15-24-08.png"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/1192126118.png"
+                      alt="Snipaste_2024-04-02_15-26-10.png"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/1682049828.png"
+                      alt="Snipaste_2024-04-02_15-30-32.png"
+                ></p>
+<h4 id="4-4-配置SSL相关选项"><a href="#4-4-配置SSL相关选项" class="headerlink" title="4.4 配置SSL相关选项"></a>4.4 配置SSL相关选项</h4><p>这一部分，需要根据自己的需求来选择，笔者这里开启的选项仅供大家参考。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/614848999.png"
+                      alt="Snipaste_2024-04-02_15-37-28.png"
+                ></p>
+<h3 id="5-配置分流"><a href="#5-配置分流" class="headerlink" title="5. 配置分流"></a>5. 配置分流</h3><h4 id="5-1-配置DNS"><a href="#5-1-配置DNS" class="headerlink" title="5.1 配置DNS"></a>5.1 配置DNS</h4><p>tips：</p>
+<blockquote>
+<p>笔者使用的阿里万网来解析的DNS记录</p>
 </blockquote>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://cdn.inik.cc/gh/tidik/images/2069457946.png"
-                      alt="2023-11-14T16:19:39.png"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/582320550.png"
+                      alt="Snipaste_2024-04-02_16-30-38.png"
                 ></p>
+<h4 id="5-2-检测是否生效"><a href="#5-2-检测是否生效" class="headerlink" title="5.2 检测是否生效"></a>5.2 检测是否生效</h4><p>笔者分别使用国内和国外服务器进行dns记录解析查看分流是否生效</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nslookup blog.inik.cc</span><br></pre></td></tr></table></figure></div>
+
+<p>Tips:</p>
+<blockquote>
+<p>yum -y install bind-utils (如果以上命令报错请先安装必要的工具「Centos下」)</p>
+</blockquote>
+<p>国内：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/650752115.png"
+                      alt="Snipaste_2024-04-02_16-39-41.png"
+                ></p>
+<p>国外：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/3522988742.png"
+                      alt="Snipaste_2024-04-02_16-40-16.png"
+                ></p>
+<p>从上面的记录可以看到，分流已经生效了，境内来源的IP会被调度到又拍云CDN上，境外来源IP会被调度到CloudFlare上。</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>至此我们的网站就接入完成了，实现了国内外双加速。</p>
 
         </div>
 
@@ -704,18 +826,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> Centos7下安装docker和docker-compose</li>
+        <li><strong>标题:</strong> 基于DNS解析分流实现CDN国内外加速与防御</li>
         <li><strong>作者:</strong> Bachelor LEE</li>
         <li><strong>创建于
-                :</strong> 2023-11-15 00:22:28</li>
+                :</strong> 2024-04-02 17:07:00</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-11-05 14:46:17
+                    :</strong> 2024-11-05 10:42:03
             </li>
         
         <li>
-            <strong>链接:</strong> https://blog.inik.cc/2023/11/15/b7caeb428844
+            <strong>链接:</strong> https://blog.inik.cc/2024/04/02/a5caa24dd309.html
         </li>
         <li>
             <strong>
@@ -734,6 +856,14 @@
         
 
         
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/CDN-Cloudflare/">#CDN,Cloudflare</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
 
         
   <div class="recommended-article px-2 sm:px-6 md:px-8">
@@ -741,13 +871,13 @@
     <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
     </div>
-    <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
-  <img src="https://cdn.inik.cc/gh/tidik/images/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
-  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
-</a><a class="recommended-article-item" href="/2024/10/19/67173d9409cf" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/11/15/b7caeb428844.html" title="Centos7下安装docker和docker-compose" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
+  <span class="title">Centos7下安装docker和docker-compose</span>
+</a><a class="recommended-article-item" href="/2024/10/19/67173d9409cf.html" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
   <img src="https://cdn.inik.cc/gh/tidik/images/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="!max-w-none">
   <span class="title">基于内网部署GPT-SoVITS服务API调用文档</span>
-</a><a class="recommended-article-item" href="/2024/03/20/c471c461c92a" title="Quantumult X下JS签到脚本开发全过程" rel="bookmark">
+</a><a class="recommended-article-item" href="/2024/03/20/c471c461c92a.html" title="Quantumult X下JS签到脚本开发全过程" rel="bookmark">
   <img src="https://cdn.inik.cc/gh/tidik/images/623038066.png" alt="Quantumult X下JS签到脚本开发全过程" class="!max-w-none">
   <span class="title">Quantumult X下JS签到脚本开发全过程</span>
 </a></div>
@@ -756,10 +886,10 @@
    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
      <i aria-hidden="true"></i><span>推荐阅读</span>
    </div>
-   <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
-  <img src="https://cdn.inik.cc/gh/tidik/images/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
-  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
-</a><a class="recommended-article-item" href="/2024/10/19/67173d9409cf" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/11/15/b7caeb428844.html" title="Centos7下安装docker和docker-compose" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
+  <span class="title">Centos7下安装docker和docker-compose</span>
+</a><a class="recommended-article-item" href="/2024/10/19/67173d9409cf.html" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
   <img src="https://cdn.inik.cc/gh/tidik/images/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="!max-w-none">
   <span class="title">基于内网部署GPT-SoVITS服务API调用文档</span>
 </a></div>
@@ -772,18 +902,33 @@
                     <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="prev"
                         rel="prev"
-                        href="/2024/03/20/c471c461c92a"
+                        href="/2024/10/19/67173d9409cf.html"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Quantumult X下JS签到脚本开发全过程</span>
+                                <span class="post-nav-title-item">基于内网部署GPT-SoVITS服务API调用文档</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
                     </div>
                 
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/03/20/c471c461c92a.html"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Quantumult X下JS签到脚本开发全过程</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
                 
             </div>
         
@@ -797,8 +942,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">目录</div>
-        <div class="page-title">Centos7下安装docker和docker-compose</div>
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E7%8E%AF%E5%A2%83"><span class="nav-text">准备环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4"><span class="nav-text">安装命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="nav-text">安装成功</span></a></li></ol>
+        <div class="page-title">基于DNS解析分流实现CDN国内外加速与防御</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B"><span class="nav-text">#整体流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%85%B3%E4%BA%8ECDN"><span class="nav-text">1. 关于CDN</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E4%BB%80%E4%B9%88%E6%98%AFCDN"><span class="nav-text">1.1 什么是CDN</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-%E4%B8%BA%E4%BB%80%E4%B9%88CDN%E5%BE%88%E9%87%8D%E8%A6%81"><span class="nav-text">1.2 为什么CDN很重要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-CDN%E7%9A%84%E4%BC%98%E5%8A%BF%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="nav-text">1.3 CDN的优势有哪些</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-%E5%B8%B8%E8%A7%81CDN%E6%8F%90%E4%BE%9B%E5%95%86"><span class="nav-text">1.4 常见CDN提供商</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="nav-text">2. 前期准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85CDN"><span class="nav-text">3. 配置国内CDN</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-%E5%88%9B%E5%BB%BACDN%E6%9C%8D%E5%8A%A1"><span class="nav-text">3.1 创建CDN服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-%E5%B0%86%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0CDN"><span class="nav-text">3.2 将域名解析到CDN</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E9%85%8D%E7%BD%AEHTTPS"><span class="nav-text">3.3 配置HTTPS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-%E6%A3%80%E6%B5%8B%E9%85%8D%E7%BD%AE%E7%BB%93%E6%9E%9C"><span class="nav-text">3.4 检测配置结果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%A4%96CDN"><span class="nav-text">4. 配置国外CDN</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-%E8%A7%A3%E6%9E%90%E6%9C%AA%E5%A4%87%E6%A1%88%E5%9F%9F%E5%90%8D%E5%88%B0CF"><span class="nav-text">4.1 解析未备案域名到CF</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-%E9%85%8D%E7%BD%AEDNS%E8%A7%A3%E6%9E%90"><span class="nav-text">4.2 配置DNS解析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E6%9C%BA%E5%90%8D"><span class="nav-text">4.3 添加自定义主机名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-%E9%85%8D%E7%BD%AESSL%E7%9B%B8%E5%85%B3%E9%80%89%E9%A1%B9"><span class="nav-text">4.4 配置SSL相关选项</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E9%85%8D%E7%BD%AE%E5%88%86%E6%B5%81"><span class="nav-text">5. 配置分流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-%E9%85%8D%E7%BD%AEDNS"><span class="nav-text">5.1 配置DNS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2-%E6%A3%80%E6%B5%8B%E6%98%AF%E5%90%A6%E7%94%9F%E6%95%88"><span class="nav-text">5.2 检测是否生效</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="nav-text">写在最后</span></a></li></ol>
 
     </div>
 </div>
