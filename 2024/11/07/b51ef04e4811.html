@@ -13,18 +13,43 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://blog.inik.cc/tags/gpt-soviis/"/>
+    <link rel="canonical" href="https://blog.inik.cc/2024/11/07/b51ef04e4811.html"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="BaLEE‘S Notes">
-<meta property="og:url" content="https://blog.inik.cc/tags/GPT-SoVIIS/index.html">
+        <meta name="description" content="前言众所周知，用Github做图床的好处就是数据可以实现永久化存储且目前容量无限制，不过也有一个很明显的缺点就是在国内访问速度非常非常非常慢，而且经常被墙。本文将提供一个基于PicGo+Github的图床搭建方案，并应用 赛博菩萨（Cloudfalre CDN加速）同时配置国内外加速，以解决国内访问速度慢的问题。 准备条件 一个PicGo客户端 一个Github账号 一个Cloudflare账号">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建基于PicGO+Github的图床并配置国内加速">
+<meta property="og:url" content="https://blog.inik.cc/2024/11/07/b51ef04e4811.html">
 <meta property="og:site_name" content="BaLEE‘S Notes">
+<meta property="og:description" content="前言众所周知，用Github做图床的好处就是数据可以实现永久化存储且目前容量无限制，不过也有一个很明显的缺点就是在国内访问速度非常非常非常慢，而且经常被墙。本文将提供一个基于PicGo+Github的图床搭建方案，并应用 赛博菩萨（Cloudfalre CDN加速）同时配置国内外加速，以解决国内访问速度慢的问题。 准备条件 一个PicGo客户端 一个Github账号 一个Cloudflare账号">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071409502.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071415521.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071418036.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071418034.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071419978.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071424202.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071429076.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071436727.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071453643.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071443492.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071446489.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071447032.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071457466.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071504186.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071507715.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071524930.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071526338.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071535646.jpg">
+<meta property="og:image" content="https://cdn.inik.cc/gh/tidik/images/202411071539149.jpg">
+<meta property="article:published_time" content="2024-11-07T05:54:40.000Z">
+<meta property="article:modified_time" content="2024-11-07T07:45:39.959Z">
 <meta property="article:author" content="Bachelor LEE">
+<meta property="article:tag" content="Github PicGO">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.inik.cc/gh/tidik/images/202411071409502.jpg">
     
     
     <!--- Icon Part-->
@@ -36,7 +61,7 @@
     
     <title>
         
-            标签: GPT-SoVIIS | BaLEE‘S Notes
+            搭建基于PicGO+Github的图床并配置国内加速 | BaLEE‘S Notes
         
     </title>
 
@@ -322,7 +347,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/tags/"
                                         >
                                     <i class="fa-solid fa-tags fa-fw"></i>
@@ -451,7 +476,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/tags/"
                         >
                             <span>
@@ -581,47 +606,401 @@
             <div class="main-content">
 
                 
-                    <div class="tag-container">
-	<div class="tag-name">
-		<i class="fa-solid fa-tag"></i>&nbsp;GPT-SoVIIS
-	</div>
-	<div class="tag-post-list">
-		
-<div class="archive-list-container">
-    
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2024</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
-            </div>
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
             
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
                 
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-19'>
-                    
-                    <a href="/2024/10/19/67173d9409cf.html" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">基于内网部署GPT-SoVITS服务API调用文档</span>
-                    </a>
-                    
                 
-                </li> <!-- Ensure the last item is properly closed -->
+                <img src="https://cdn.inik.cc/gh/tidik/images/202411071539149.jpg" alt="搭建基于PicGO+Github的图床并配置国内加速" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
+                
+                <div class="w-full flex items-center absolute bottom-0 justify-start">
+                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">搭建基于PicGO+Github的图床并配置国内加速</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="http://q1.qlogo.cn/g?b=qq&nk=97402023&s=640">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">Bachelor LEE</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-11-07 13:54:40</span>
+        <span class="mobile">2024-11-07 13:54:40</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-11-07 15:45:39</span>
+            <span class="mobile">2024-11-07 15:45:39</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Github-PicGO/">Github PicGO</a>&nbsp;
+                    </li>
+                
             </ul>
-        </section>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>3 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
-	</div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+                <div class="article-expire mt-4 mx-2 sm:mx-6 md:mx-8 note p-4 rounded-lg red icon hidden" id="expiration-container">
+                    <i class="expire-icon fa-solid fa-timer mr-0.5 text-red-600 dark:text-red-400"></i>
+                    <span class="expire-label text-red-600 dark:text-red-400 " id="expiration-date">这篇文章最后更新于 some 天前，内容可能已经过时。</span>
+                </div>
+
+            <script data-swup-reload-script>
+                function updateExpirationDate() {
+                    try{
+                        const expiredDate = new Date("Fri Nov 07 2025 13:54:40 GMT+0800 (China Standard Time)");
+                        const updatedDate = new Date("Thu Nov 07 2024 15:45:39 GMT+0800");
+                        const now = new Date();
+                        const expirationValue = document.getElementById("expiration-date");
+                        const expirationContainer = document.getElementById("expiration-container");
+                        let daysAgo = Math.floor((now - updatedDate) / (1000 * 60 * 60 * 24));
+                        if (expiredDate < now) {
+                            expirationContainer.classList.remove("hidden");
+                            // console.log(daysAgo)
+                            expirationValue.innerHTML = expirationValue.innerHTML.replace("some", daysAgo);
+                        }
+                    } catch (e) {}
+                }
+                document.addEventListener("DOMContentLoaded", function () {
+                    updateExpirationDate();
+                });
+                try {
+                    swup.hooks.on("page:view", updateExpirationDate)
+                } catch (e){}
+            </script>
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>众所周知，用Github做图床的好处就是数据可以实现永久化存储且目前容量无限制，不过也有一个很明显的缺点就是在国内访问速度非常非常非常慢，而且经常被墙。本文将提供一个基于PicGo+Github的图床搭建方案，并应用 <code>赛博菩萨</code>（Cloudfalre CDN加速）同时配置国内外加速，以解决国内访问速度慢的问题。</p>
+<h3 id="准备条件"><a href="#准备条件" class="headerlink" title="准备条件"></a>准备条件</h3><ul>
+<li>一个PicGo客户端</li>
+<li>一个Github账号</li>
+<li>一个Cloudflare账号</li>
+<li>一个A域名（备案与否都不影响）(我的A域名是<code>sbsbsbs.sbs</code>)</li>
+<li>一个B域名（备案与否都不影响）(我的B域名是<code>cdn.inik.cc</code>)</li>
+</ul>
+<h2 id="设置Github"><a href="#设置Github" class="headerlink" title="设置Github"></a>设置Github</h2><p>在Github上新建一个仓库，仓库名随意，比如<code>picgo</code>，然后把仓库设置为公开。并创建一个用于PicGO和Github通信的Token，将图片推送到GitHub。</p>
+<blockquote>
+<p>注意：仓库权限必须为公开，不然会出现引用链接无法访问的情况。</p>
+</blockquote>
+<h3 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071409502.jpg"
+                     
+                ></p>
+<h3 id="设置Token并分配权限"><a href="#设置Token并分配权限" class="headerlink" title="设置Token并分配权限"></a>设置Token并分配权限</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071415521.jpg"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071418036.jpg"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071418034.jpg"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071419978.jpg"
+                     
+                ></p>
+<h2 id="PicGO设置"><a href="#PicGO设置" class="headerlink" title="PicGO设置"></a>PicGO设置</h2><h3 id="安装PicGo"><a href="#安装PicGo" class="headerlink" title="安装PicGo"></a>安装PicGo</h3><p>下载对应的客户端并安装，我这里使用的是 macOS 版。<br>下载地址：<a class="link"   target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases" >点击下载PicGo客户端 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071424202.jpg"
+                     
+                ></p>
+<h3 id="设置Github-1"><a href="#设置Github-1" class="headerlink" title="设置Github"></a>设置Github</h3><p>在设置中填写我们刚才创建的仓库信息，并填写刚才创建的Token。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071429076.jpg"
+                     
+                ></p>
+<p>设置完成后，点击<code>确定</code>，然后点击<code>上传区</code>，上传一张图片，如果上传成功，说明配置成功。</p>
+<p>此时刷新GitHub页面可以看到推送的图片。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071436727.jpg"
+                     
+                ></p>
+<h2 id="Cloudflare设置"><a href="#Cloudflare设置" class="headerlink" title="Cloudflare设置"></a>Cloudflare设置</h2><h3 id="将A域名解析到Cloudflare"><a href="#将A域名解析到Cloudflare" class="headerlink" title="将A域名解析到Cloudflare"></a>将A域名解析到Cloudflare</h3><p>这一步就省略了，如果你没使用过Cloudflare，请看这一片博客<a href="https://blog.inik.cc/2024/04/02/a5caa24dd309.html">基于DNS解析分流实现CDN国内外加速与防御</a>的域名解析到Cloudflare部分。</p>
+<h3 id="添加一条A域名的解析记录"><a href="#添加一条A域名的解析记录" class="headerlink" title="添加一条A域名的解析记录"></a>添加一条A域名的解析记录</h3><p>当作<code>回退源</code>用于接入CNAME解析的B域名</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071453643.jpg"
+                     
+                ></p>
+<h3 id="将B域名以CNAME方式解析到Cloudflare"><a href="#将B域名以CNAME方式解析到Cloudflare" class="headerlink" title="将B域名以CNAME方式解析到Cloudflare"></a>将B域名以CNAME方式解析到Cloudflare</h3><p>添加自定义主机名（B域名）</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071443492.jpg"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071446489.jpg"
+                     
+                ></p>
+<p>在B域名的DNS记录中添加如下TXT解析记录，添加后，刷新。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071447032.jpg"
+                     
+                ></p>
+<p>接入成功的状态应是下图所示。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071457466.jpg"
+                     
+                ></p>
+<p>至此，我们已经完成A域名和B域名在Cloudflare上的配置。</p>
+<h3 id="设置重定向规则完成国内外分流"><a href="#设置重定向规则完成国内外分流" class="headerlink" title="设置重定向规则完成国内外分流"></a>设置重定向规则完成国内外分流</h3><p>创建第一条分流规则，添加国内分流重定向</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071504186.jpg"
+                     
+                ></p>
+<ul>
+<li>国内分流重定向表达式预览<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(http.host eq &quot;cdn.inik.cc&quot; and ip.geoip.country eq &quot;CN&quot;)</span><br></pre></td></tr></table></figure></div></li>
+<li>国内分流URL重定向 表达式<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">concat(&quot;https://jsd.cdn.zzko.cn&quot;, http.request.uri.path)</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<p>创建第二条分流规则，添加国际分流重定向</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071507715.jpg"
+                     
+                ></p>
+<ul>
+<li>国际分流重定向表达式预览<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(http.host eq &quot;cdn.inik.cc&quot; and ip.geoip.country ne &quot;CN&quot;)</span><br></pre></td></tr></table></figure></div></li>
+<li>国际分流URL重定向 表达式<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">concat(&quot;https://cdn.jsdelivr.net&quot;, http.request.uri.path)</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<h2 id="B域名解析设置"><a href="#B域名解析设置" class="headerlink" title="B域名解析设置"></a>B域名解析设置</h2><p>上面我们完成了 Github 和 Cloudflare 的配置，接下来我们需要在 B 域名的DNS解析上做一下设置，来实现DNS解析的国内外分流。</p>
+<blockquote>
+<p>tips: 这里我使用的阿里云DNS解析</p>
+</blockquote>
+<p>添加一条A解析记录，并指定 解析请求来源<code>境外</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071524930.jpg"
+                     
+                ></p>
+<p>添加一条CNAME解析记录，并指定 解析请求来源<code>境内</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071526338.jpg"
+                     
+                ></p>
+<ul>
+<li><p>你可能会好奇 为什么境内解析的CNAME解析记录要指向 <code>visa.cn</code>呢？</p>
+</li>
+<li><p>这是因为 <code>visa.cn</code> 是一个Cloudflare CDN 反向代理的入口（因为 <code>visa</code>的服务接入Cloudflare来提供安全和攻击防御）， 众所周知的原因，<code>visa.cn</code>在境内有专属的特权来过境。所以我直接在<code>visa.cn</code>接入，让它帮我们把流量转发转发到Cloudflare，比我们直连要快很多很多。🐶</p>
+</li>
+</ul>
+<h2 id="临门一脚"><a href="#临门一脚" class="headerlink" title="临门一脚"></a>临门一脚</h2><p>还记得第二步我们配置的PicGO客户端吗？到此我们已经把需要用的域名都配置完了，接下来我们还需在PicGO中设置我们的自定义链接。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071535646.jpg"
+                     
+                ></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.inik.cc/gh/tidik/images</span><br></pre></td></tr></table></figure></div>
+
+<p>到这一步我们完成了所有的配置，接下来我们在上传图片测试返回的url链接应该如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.inik.cc/gh/tidik/images/202411071535646.jpg</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>补充一个整体加速流程图吧（算是吧🐶）</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.inik.cc/gh/tidik/images/202411071539149.jpg"
+                     
+                ></p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> 搭建基于PicGO+Github的图床并配置国内加速</li>
+        <li><strong>作者:</strong> Bachelor LEE</li>
+        <li><strong>创建于
+                :</strong> 2024-11-07 13:54:40</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-11-07 15:45:39
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://blog.inik.cc/2024/11/07/b51ef04e4811.html
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
 </div>
 
-<div class="tag-paginator">
-	<div class="paginator">
-    <span class="page-number current">1</span>
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Github-PicGO/">#Github PicGO</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+  <div class="recommended-article px-2 sm:px-6 md:px-8">
+   <div class="recommended-desktop">
+    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
+     <i aria-hidden="true"></i><span>推荐阅读</span>
+    </div>
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309.html" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
+  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
+</a><a class="recommended-article-item" href="/2023/11/15/b7caeb428844.html" title="Centos7下安装docker和docker-compose" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
+  <span class="title">Centos7下安装docker和docker-compose</span>
+</a><a class="recommended-article-item" href="/2024/10/19/67173d9409cf.html" title="基于内网部署GPT-SoVITS服务API调用文档" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="!max-w-none">
+  <span class="title">基于内网部署GPT-SoVITS服务API调用文档</span>
+</a></div>
+   </div>
+   <div class="recommended-mobile">
+   <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
+     <i aria-hidden="true"></i><span>推荐阅读</span>
+   </div>
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2024/04/02/a5caa24dd309.html" title="基于DNS解析分流实现CDN国内外加速与防御" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/614848999.png" alt="基于DNS解析分流实现CDN国内外加速与防御" class="!max-w-none">
+  <span class="title">基于DNS解析分流实现CDN国内外加速与防御</span>
+</a><a class="recommended-article-item" href="/2023/11/15/b7caeb428844.html" title="Centos7下安装docker和docker-compose" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
+  <span class="title">Centos7下安装docker和docker-compose</span>
+</a></div>
+   </div>
+  </div>
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/10/19/67173d9409cf.html"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">基于内网部署GPT-SoVITS服务API调用文档</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">目录</div>
+        <div class="page-title">搭建基于PicGO+Github的图床并配置国内加速</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E6%9D%A1%E4%BB%B6"><span class="nav-text">准备条件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AEGithub"><span class="nav-text">设置Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="nav-text">新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AEToken%E5%B9%B6%E5%88%86%E9%85%8D%E6%9D%83%E9%99%90"><span class="nav-text">设置Token并分配权限</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PicGO%E8%AE%BE%E7%BD%AE"><span class="nav-text">PicGO设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85PicGo"><span class="nav-text">安装PicGo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AEGithub-1"><span class="nav-text">设置Github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloudflare%E8%AE%BE%E7%BD%AE"><span class="nav-text">Cloudflare设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%86A%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0Cloudflare"><span class="nav-text">将A域名解析到Cloudflare</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E4%B8%80%E6%9D%A1A%E5%9F%9F%E5%90%8D%E7%9A%84%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95"><span class="nav-text">添加一条A域名的解析记录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%86B%E5%9F%9F%E5%90%8D%E4%BB%A5CNAME%E6%96%B9%E5%BC%8F%E8%A7%A3%E6%9E%90%E5%88%B0Cloudflare"><span class="nav-text">将B域名以CNAME方式解析到Cloudflare</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E9%87%8D%E5%AE%9A%E5%90%91%E8%A7%84%E5%88%99%E5%AE%8C%E6%88%90%E5%9B%BD%E5%86%85%E5%A4%96%E5%88%86%E6%B5%81"><span class="nav-text">设置重定向规则完成国内外分流</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E8%AE%BE%E7%BD%AE"><span class="nav-text">B域名解析设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%B4%E9%97%A8%E4%B8%80%E8%84%9A"><span class="nav-text">临门一脚</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="nav-text">写在最后</span></a>
+
+    </div>
+</div>
+        </div>
+    
 </div>
 
-</div>
 
 
                 
@@ -713,6 +1092,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
