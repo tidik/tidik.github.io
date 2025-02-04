@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     
+        
+        
+        
+            <link rel="preconnect" href="https://registry.npmmirror.com" crossorigin>
+        
+    
     <!--- Seo Part-->
     
     <link rel="canonical" href="https://blog.inik.cc/2024/10/19/67173d9409cf.html"/>
@@ -18,18 +24,23 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="前言这篇文档是API调用文档，以便查阅方便并不是部署搭建教程。 客户端API调用 以下所有请求HOST均为下列内网，GET形式请按标准规定来拼接URL   http:&#x2F;&#x2F;192.168.102.5:9880&#x2F;   使用执行参数指定的参考音频   参数 含义    text 需要转语音文本   text_language 目标语言   GET1text&#x3D;天姥连天向天横，势拔五岳掩赤城。&amp;te">
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于内网部署GPT-SoVITS服务API调用文档">
 <meta property="og:url" content="https://blog.inik.cc/2024/10/19/67173d9409cf.html">
 <meta property="og:site_name" content="BaLEE‘S Notes">
-<meta property="og:description" content="前言这篇文档是API调用文档，以便查阅方便并不是部署搭建教程。 客户端API调用 以下所有请求HOST均为下列内网，GET形式请按标准规定来拼接URL   http:&#x2F;&#x2F;192.168.102.5:9880&#x2F;   使用执行参数指定的参考音频   参数 含义    text 需要转语音文本   text_language 目标语言   GET1text&#x3D;天姥连天向天横，势拔五岳掩赤城。&amp;te">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.inik.cc/images/redefine-og.webp">
 <meta property="article:published_time" content="2024-10-19T05:57:00.000Z">
-<meta property="article:modified_time" content="2024-11-05T02:42:11.037Z">
+<meta property="article:modified_time" content="2024-11-05T02:42:11.000Z">
 <meta property="article:author" content="Bachelor LEE">
 <meta property="article:tag" content="GPT-SoVIIS">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.inik.cc/images/redefine-og.webp">
     
     
     <!--- Icon Part-->
@@ -45,9 +56,7 @@
         
     </title>
 
-    
-<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
-
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fonts/Chillax/chillax.css">
 
     <!--- Inject Part-->
     
@@ -62,17 +71,11 @@
 
 
     
-        
-<link rel="stylesheet" href="/assets/build/styles.css">
-
+        <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/css/build/tailwind.css">
     
 
-    
-<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
-
-    
-<link rel="stylesheet" href="/fonts/Geist/geist.css">
-
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fonts/GeistMono/geist-mono.css">
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fonts/Geist/geist.css">
     <!--- Font Part-->
     
     
@@ -82,59 +85,46 @@
     
     
     
-        
-<script src="/js/libs/anime.min.js"></script>
-
+        <script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/anime.min.js" ></script>
     
 
     <script id="hexo-configurations">
     window.config = {"hostname":"blog.inik.cc","root":"/","language":"zh-CN","path":"search.xml"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"atom-one-dark"},"font":{"enable":true,"family":"Code","url":"https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap"}},"toc":{"enable":true,"max_depth":6,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc"},"lazyload":true,"recommendation":{"enable":true,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":true,"custom_message":"Loading..."},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"BaLEE","subtitle":{"text":["Loading..."],"hitokoto":{"enable":true,"show_author":true,"api":"https://v1.hitokoto.cn"},"typing_speed":150,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/tidik","instagram":null,"zhihu":null,"twitter":null,"email":"asryn@foxmail.com","qq":"https://wpa.qq.com/msgrd?v=3&amp;uin=97402023&amp;site=qq&amp;menu=yes"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"标签":{"icon":"fa-solid fa-tags","path":"/tags/"},"归档":{"path":"/archives","icon":"fa-regular fa-archive"},"探针":{"path":"https://tz.inik.cc","icon":"fa-regular fa-server"},"青龙":{"path":"https://ql.inik.cc","icon":"fa-brands fa-d-and-d"},"Github":{"path":"https://github.com/tidik","icon":"fa-brands fa-square-github"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"cloud"},"home":{"sidebar":{"enable":true,"position":"right","first_item":"info","announcement":"大胆点生活，你并没有那么多观众。","show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/11/13 00:00:00"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"atom-one-dark"},"font":{"enable":true,"family":"Code","url":"https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap"}},"toc":{"enable":true,"max_depth":6,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":true,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":true,"custom_message":"Loading..."},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null},"global":{"open_graph":{"enable":true,"image":"your_image_path","description":"your_description"}}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"BaLEE","subtitle":{"text":["Loading..."],"hitokoto":{"enable":true,"show_author":true,"api":"https://v1.hitokoto.cn"},"typing_speed":150,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/tidik","instagram":null,"zhihu":null,"twitter":null,"email":"asryn@foxmail.com","qq":"https://wpa.qq.com/msgrd?v=3&amp;uin=97402023&amp;site=qq&amp;menu=yes"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.8.2","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"标签":{"icon":"fa-solid fa-tags","path":"/tags/"},"归档":{"path":"/archives","icon":"fa-regular fa-archive"},"探针":{"path":"https://tz.inik.cc","icon":"fa-regular fa-server"},"青龙":{"path":"https://ql.inik.cc","icon":"fa-brands fa-d-and-d"},"Github":{"path":"https://github.com/tidik","icon":"fa-brands fa-square-github"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"cloud"},"home":{"sidebar":{"enable":true,"position":"right","first_item":"info","announcement":"大胆点生活，你并没有那么多观众。","show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/11/13 00:00:00"};
     window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
     window.data = {"masonry":false};
   </script>
     
     <!--- Fontawesome Part-->
-    
-<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
-
-    
-<link rel="stylesheet" href="/fontawesome/brands.min.css">
-
-    
-<link rel="stylesheet" href="/fontawesome/solid.min.css">
-
-    
-<link rel="stylesheet" href="/fontawesome/regular.min.css">
-
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fontawesome/regular.min.css">
     
     
-        
-<link rel="stylesheet" href="/fontawesome/light.min.css">
-
+        <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/fontawesome/light.min.css">
     
     
     
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 
-<body>
-<div class="progress-bar-container">
-    
-        <span class="scroll-progress-bar"></span>
-    
 
-    
-        <span class="pjax-progress-bar"></span>
-<!--        <span class="swup-progress-icon">-->
-<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
-<!--        </span>-->
-    
+<body>
+	<div class="progress-bar-container">
+	
+	<span class="scroll-progress-bar"></span>
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
 </div>
 
-
-
-    <style>
+<style>
     :root {
         --preloader-background-color: #fff;
         --preloader-text-color: #000;
@@ -283,13 +273,11 @@
 
 <main class="page-container" id="swup">
 
-    
+	
 
-    <div class="main-content-container flex flex-col justify-between min-h-dvh">
-
-
-        <div class="main-content-header">
-            <header class="navbar-container px-6 md:px-12">
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
     <div class="navbar-content transition-navbar ">
         <div class="left">
             
@@ -558,7 +546,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -566,7 +554,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -577,44 +565,41 @@
 </header>
 
 
-        </div>
+		</div>
 
-        <div class="main-content-body">
+		<div class="main-content-body transition-fade-up">
+			
 
-            
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-            <div class="main-content">
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="https://cdn.inik.cc/gh/tidik/images/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">基于内网部署GPT-SoVITS服务API调用文档</h1>
+			</div>
+			
+		</div>
 
-                
-                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
-    <div class="article-content-container">
-
-        <div class="article-title relative w-full">
-            
-                
-                
-                <img src="https://cdn.inik.cc/gh/tidik/images/202411050053508.png" alt="基于内网部署GPT-SoVITS服务API调用文档" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
-                
-                <div class="w-full flex items-center absolute bottom-0 justify-start">
-                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">基于内网部署GPT-SoVITS服务API调用文档</h1>
-                </div>
-            
-            </div>
-
-        
-            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="http://q1.qlogo.cn/g?b=qq&nk=97402023&s=640">
-                </div>
-                <div class="info flex flex-col justify-between">
-                    <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">Bachelor LEE</span>
-                        
-                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="http://q1.qlogo.cn/g?b=qq&nk=97402023&s=640">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Bachelor LEE</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv2</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
         <span class="desktop">2024-10-19 13:57</span>
@@ -662,21 +647,21 @@
     
 </div>
 
-                    </div>
-                </div>
-            </div>
-        
+				</div>
+			</div>
+		</div>
+		
 
-        
+		
 
 
-        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这篇文档是API调用文档，以便查阅方便并不是部署搭建教程。</p>
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这篇文档是API调用文档，以便查阅方便并不是部署搭建教程。</p>
 <h3 id="客户端API调用"><a href="#客户端API调用" class="headerlink" title="客户端API调用"></a>客户端API调用</h3><blockquote>
 <p>以下所有请求HOST均为下列内网，GET形式请按标准规定来拼接URL</p>
 </blockquote>
 <ul>
-<li><a class="link"   target="_blank" rel="noopener" href="http://192.168.102.5:9880/" >http://192.168.102.5:9880/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="http://192.168.102.5:9880/" >http://192.168.102.5:9880/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
 </ul>
 <h4 id="使用执行参数指定的参考音频"><a href="#使用执行参数指定的参考音频" class="headerlink" title="使用执行参数指定的参考音频"></a>使用执行参数指定的参考音频</h4><table>
 <thead>
@@ -694,8 +679,8 @@
 <td>目标语言</td>
 </tr>
 </tbody></table>
-<h6 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh</span><br></pre></td></tr></table></figure></div>
-<h6 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+<h6 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h6><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h6><div class="code-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
 
 <h4 id="使用执行参数指定的参考音频并设定分割符号"><a href="#使用执行参数指定的参考音频并设定分割符号" class="headerlink" title="使用执行参数指定的参考音频并设定分割符号"></a>使用执行参数指定的参考音频并设定分割符号</h4><table>
 <thead>
@@ -717,8 +702,8 @@
 <td>分割字符</td>
 </tr>
 </tbody></table>
-<h4 id="GET-1"><a href="#GET-1" class="headerlink" title="GET"></a>GET</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。</span><br></pre></td></tr></table></figure></div>
-<h6 id="POST-1"><a href="#POST-1" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+<h4 id="GET-1"><a href="#GET-1" class="headerlink" title="GET"></a>GET</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST-1"><a href="#POST-1" class="headerlink" title="POST"></a>POST</h6><div class="code-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
 <h4 id="手动指定当次推理所使用的参考音频"><a href="#手动指定当次推理所使用的参考音频" class="headerlink" title="手动指定当次推理所使用的参考音频"></a>手动指定当次推理所使用的参考音频</h4><table>
 <thead>
 <tr>
@@ -751,8 +736,8 @@
 <td>音频对应语言</td>
 </tr>
 </tbody></table>
-<h6 id="GET-2"><a href="#GET-2" class="headerlink" title="GET"></a>GET</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refer_wav_path=123.wav&amp;prompt_text=一二三。&amp;prompt_language=zh&amp;text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。</span><br></pre></td></tr></table></figure></div>
-<h6 id="POST-2"><a href="#POST-2" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;refer_wav_path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;123.wav&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;一二三。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+<h6 id="GET-2"><a href="#GET-2" class="headerlink" title="GET"></a>GET</h6><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refer_wav_path=123.wav&amp;prompt_text=一二三。&amp;prompt_language=zh&amp;text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST-2"><a href="#POST-2" class="headerlink" title="POST"></a>POST</h6><div class="code-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;refer_wav_path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;123.wav&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;一二三。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
 <ul>
 <li>成功: 直接返回 wav 音频流， http code 200</li>
 <li>失败: 返回包含错误信息的 json, http code 400</li>
@@ -809,8 +794,8 @@
 <td>音频文件路径的数组</td>
 </tr>
 </tbody></table>
-<h6 id="GET-3"><a href="#GET-3" class="headerlink" title="GET"></a>GET</h6><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refer_wav_path=123.wav&amp;prompt_text=一二三。&amp;prompt_language=zh&amp;text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。&amp;top_k=20&amp;top_p=0.6&amp;temperature=0.6&amp;speed=1&amp;inp_refs=&quot;456.wav&quot;&amp;inp_refs=&quot;789.wav</span><br></pre></td></tr></table></figure></div>
-<h6 id="POST-3"><a href="#POST-3" class="headerlink" title="POST"></a>POST</h6><div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;refer_wav_path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;123.wav&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;一二三。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;top_k&quot;</span><span class="punctuation">:</span> <span class="number">20</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;top_p&quot;</span><span class="punctuation">:</span> <span class="number">0.6</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;temperature&quot;</span><span class="punctuation">:</span> <span class="number">0.6</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;speed&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;inp_refs&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;456.wav&quot;</span><span class="punctuation">,</span><span class="string">&quot;789.wav&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
+<h6 id="GET-3"><a href="#GET-3" class="headerlink" title="GET"></a>GET</h6><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refer_wav_path=123.wav&amp;prompt_text=一二三。&amp;prompt_language=zh&amp;text=天姥连天向天横，势拔五岳掩赤城。&amp;text_language=zh&amp;cut_punc=，。&amp;top_k=20&amp;top_p=0.6&amp;temperature=0.6&amp;speed=1&amp;inp_refs=&quot;456.wav&quot;&amp;inp_refs=&quot;789.wav</span><br></pre></td></tr></table></figure></div>
+<h6 id="POST-3"><a href="#POST-3" class="headerlink" title="POST"></a>POST</h6><div class="code-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;refer_wav_path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;123.wav&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;一二三。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prompt_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;天姥连天向天横，势拔五岳掩赤城。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;text_language&quot;</span><span class="punctuation">:</span> <span class="string">&quot;zh&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;cut_punc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;，。&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;top_k&quot;</span><span class="punctuation">:</span> <span class="number">20</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;top_p&quot;</span><span class="punctuation">:</span> <span class="number">0.6</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;temperature&quot;</span><span class="punctuation">:</span> <span class="number">0.6</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;speed&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;inp_refs&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;456.wav&quot;</span><span class="punctuation">,</span><span class="string">&quot;789.wav&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></div>
 <ul>
 <li>成功: 直接返回 wav 音频流， http code 200</li>
 <li>失败: 返回包含错误信息的 json, http code 400</li>
@@ -818,7 +803,7 @@
 <h4 id="简单的Axios调用示例"><a href="#简单的Axios调用示例" class="headerlink" title="简单的Axios调用示例"></a>简单的Axios调用示例</h4><blockquote>
 <p>需要ffmpeg环境支持，请自行安装</p>
 </blockquote>
-<div class="highlight-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&#x27;axios&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Speaker</span> = <span class="built_in">require</span>(<span class="string">&#x27;speaker&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> ffmpeg = <span class="built_in">require</span>(<span class="string">&#x27;fluent-ffmpeg&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建 Speaker 实例来播放解码后的 PCM 音频流</span></span><br><span class="line"><span class="keyword">const</span> speaker = <span class="keyword">new</span> <span class="title class_">Speaker</span>(&#123;</span><br><span class="line">    <span class="attr">channels</span>: <span class="number">2</span>,          <span class="comment">// 立体声</span></span><br><span class="line">    <span class="attr">bitDepth</span>: <span class="number">16</span>,         <span class="comment">// 16 位</span></span><br><span class="line">    <span class="attr">sampleRate</span>: <span class="number">44100</span>     <span class="comment">// 44.1kHz 采样率</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 请求流式音频并处理的函数</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">streamOggAudio</span> = <span class="keyword">async</span> (<span class="params">url</span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="title function_">axios</span>(&#123;</span><br><span class="line">            <span class="attr">method</span>: <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: url,</span><br><span class="line">            <span class="attr">responseType</span>: <span class="string">&#x27;stream&#x27;</span></span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;开始ffmpeg流式转换格式，OGG-&gt;PCM&quot;</span>)</span><br><span class="line">        <span class="comment">// 使用 FFmpeg 转换 OGG 流并播放</span></span><br><span class="line">        <span class="title function_">ffmpeg</span>(response.<span class="property">data</span>)</span><br><span class="line">            .<span class="title function_">format</span>(<span class="string">&#x27;s16le&#x27;</span>) <span class="comment">// 指定输出格式为 PCM</span></span><br><span class="line">            .<span class="title function_">audioChannels</span>(<span class="number">2</span>) <span class="comment">// 设置为立体声</span></span><br><span class="line">            .<span class="title function_">audioFrequency</span>(<span class="number">44100</span>) <span class="comment">// 设置采样率为 44.1kHz</span></span><br><span class="line">            .<span class="title function_">pipe</span>(speaker, &#123; <span class="attr">end</span>: <span class="literal">true</span> &#125;) <span class="comment">// 将转换后的音频流传递给 Speaker</span></span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;Error streaming audio:&#x27;</span>, error);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> text = <span class="string">`先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。`</span></span><br><span class="line"><span class="keyword">const</span> audioUrl = <span class="string">`http://192.168.102.5:9880?text=<span class="subst">$&#123;text&#125;</span>&amp;text_language=zh`</span>;</span><br><span class="line">!(<span class="title function_">async</span> ()=&gt;&#123;</span><br><span class="line">    <span class="keyword">await</span> <span class="title function_">streamOggAudio</span>(audioUrl);</span><br><span class="line">&#125;)()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&#x27;axios&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Speaker</span> = <span class="built_in">require</span>(<span class="string">&#x27;speaker&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> ffmpeg = <span class="built_in">require</span>(<span class="string">&#x27;fluent-ffmpeg&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建 Speaker 实例来播放解码后的 PCM 音频流</span></span><br><span class="line"><span class="keyword">const</span> speaker = <span class="keyword">new</span> <span class="title class_">Speaker</span>(&#123;</span><br><span class="line">    <span class="attr">channels</span>: <span class="number">2</span>,          <span class="comment">// 立体声</span></span><br><span class="line">    <span class="attr">bitDepth</span>: <span class="number">16</span>,         <span class="comment">// 16 位</span></span><br><span class="line">    <span class="attr">sampleRate</span>: <span class="number">44100</span>     <span class="comment">// 44.1kHz 采样率</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 请求流式音频并处理的函数</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">streamOggAudio</span> = <span class="keyword">async</span> (<span class="params">url</span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="title function_">axios</span>(&#123;</span><br><span class="line">            <span class="attr">method</span>: <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">            <span class="attr">url</span>: url,</span><br><span class="line">            <span class="attr">responseType</span>: <span class="string">&#x27;stream&#x27;</span></span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;开始ffmpeg流式转换格式，OGG-&gt;PCM&quot;</span>)</span><br><span class="line">        <span class="comment">// 使用 FFmpeg 转换 OGG 流并播放</span></span><br><span class="line">        <span class="title function_">ffmpeg</span>(response.<span class="property">data</span>)</span><br><span class="line">            .<span class="title function_">format</span>(<span class="string">&#x27;s16le&#x27;</span>) <span class="comment">// 指定输出格式为 PCM</span></span><br><span class="line">            .<span class="title function_">audioChannels</span>(<span class="number">2</span>) <span class="comment">// 设置为立体声</span></span><br><span class="line">            .<span class="title function_">audioFrequency</span>(<span class="number">44100</span>) <span class="comment">// 设置采样率为 44.1kHz</span></span><br><span class="line">            .<span class="title function_">pipe</span>(speaker, &#123; <span class="attr">end</span>: <span class="literal">true</span> &#125;) <span class="comment">// 将转换后的音频流传递给 Speaker</span></span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;Error streaming audio:&#x27;</span>, error);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> text = <span class="string">`先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。`</span></span><br><span class="line"><span class="keyword">const</span> audioUrl = <span class="string">`http://192.168.102.5:9880?text=<span class="subst">$&#123;text&#125;</span>&amp;text_language=zh`</span>;</span><br><span class="line">!(<span class="title function_">async</span> ()=&gt;&#123;</span><br><span class="line">    <span class="keyword">await</span> <span class="title function_">streamOggAudio</span>(audioUrl);</span><br><span class="line">&#125;)()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 
 <h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h3><h4 id="api-py-启动参数列表"><a href="#api-py-启动参数列表" class="headerlink" title="api.py 启动参数列表"></a>api.py 启动参数列表</h4><table>
 <thead>
@@ -926,18 +911,18 @@
 <td></td>
 </tr>
 </tbody></table>
-<h3 id="运行前准备"><a href="#运行前准备" class="headerlink" title="运行前准备"></a>运行前准备</h3><h4 id="debian-ubuntu-安装screen"><a href="#debian-ubuntu-安装screen" class="headerlink" title="debian&#x2F;ubuntu 安装screen"></a>debian&#x2F;ubuntu 安装screen</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install screen -y</span><br></pre></td></tr></table></figure></div>
-<h4 id="新建screen"><a href="#新建screen" class="headerlink" title="新建screen"></a>新建screen</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S GPTSoVits</span><br></pre></td></tr></table></figure></div>
-<h4 id="激活conda环境"><a href="#激活conda环境" class="headerlink" title="激活conda环境"></a>激活conda环境</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate GPTSoVits</span><br></pre></td></tr></table></figure></div>
-<h4 id="服务端启动示例"><a href="#服务端启动示例" class="headerlink" title="服务端启动示例"></a>服务端启动示例</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python api.py -dr &quot;wavs/1.wav&quot; -dt &quot;大家也叫我三月、小三月…你呢？你想叫我什么？&quot; -dl &quot;zh&quot; -d &quot;cpu&quot; -a &quot;0.0.0.0&quot; -p 9880 -sm &quot;n&quot; -cp &quot;,.，。&quot;</span><br></pre></td></tr></table></figure></div>
-<h4 id="保存screen会话"><a href="#保存screen会话" class="headerlink" title="保存screen会话"></a>保存screen会话</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl+a+d</span><br></pre></td></tr></table></figure></div>
-<h4 id="查看监听端口信息"><a href="#查看监听端口信息" class="headerlink" title="查看监听端口信息"></a>查看监听端口信息</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -anp | grep 9880</span><br></pre></td></tr></table></figure></div>
-<h4 id="开放防火墙端口"><a href="#开放防火墙端口" class="headerlink" title="开放防火墙端口"></a>开放防火墙端口</h4><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw allow 9880</span><br></pre></td></tr></table></figure></div>
-        </div>
+<h3 id="运行前准备"><a href="#运行前准备" class="headerlink" title="运行前准备"></a>运行前准备</h3><h4 id="debian-ubuntu-安装screen"><a href="#debian-ubuntu-安装screen" class="headerlink" title="debian&#x2F;ubuntu 安装screen"></a>debian&#x2F;ubuntu 安装screen</h4><div class="code-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install screen -y</span><br></pre></td></tr></table></figure></div>
+<h4 id="新建screen"><a href="#新建screen" class="headerlink" title="新建screen"></a>新建screen</h4><div class="code-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S GPTSoVits</span><br></pre></td></tr></table></figure></div>
+<h4 id="激活conda环境"><a href="#激活conda环境" class="headerlink" title="激活conda环境"></a>激活conda环境</h4><div class="code-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate GPTSoVits</span><br></pre></td></tr></table></figure></div>
+<h4 id="服务端启动示例"><a href="#服务端启动示例" class="headerlink" title="服务端启动示例"></a>服务端启动示例</h4><div class="code-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python api.py -dr &quot;wavs/1.wav&quot; -dt &quot;大家也叫我三月、小三月…你呢？你想叫我什么？&quot; -dl &quot;zh&quot; -d &quot;cpu&quot; -a &quot;0.0.0.0&quot; -p 9880 -sm &quot;n&quot; -cp &quot;,.，。&quot;</span><br></pre></td></tr></table></figure></div>
+<h4 id="保存screen会话"><a href="#保存screen会话" class="headerlink" title="保存screen会话"></a>保存screen会话</h4><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl+a+d</span><br></pre></td></tr></table></figure></div>
+<h4 id="查看监听端口信息"><a href="#查看监听端口信息" class="headerlink" title="查看监听端口信息"></a>查看监听端口信息</h4><div class="code-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -anp | grep 9880</span><br></pre></td></tr></table></figure></div>
+<h4 id="开放防火墙端口"><a href="#开放防火墙端口" class="headerlink" title="开放防火墙端口"></a>开放防火墙端口</h4><div class="code-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw allow 9880</span><br></pre></td></tr></table></figure></div>
+		</div>
 
-        
-            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-                <div class="article-copyright-info-container">
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
     <ul>
         <li><strong>标题:</strong> 基于内网部署GPT-SoVITS服务API调用文档</li>
         <li><strong>作者:</strong> Bachelor LEE</li>
@@ -965,20 +950,20 @@
     </ul>
 </div>
 
-            </div>
-        
+		</div>
+		
 
-        
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/tags/GPT-SoVIIS/">#GPT-SoVIIS</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/GPT-SoVIIS/">#GPT-SoVIIS</a>&nbsp;
+			</li>
+			
+		</ul>
+		
 
-        
+		
   <div class="recommended-article px-2 sm:px-6 md:px-8">
    <div class="recommended-desktop">
     <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
@@ -990,9 +975,9 @@
 </a><a class="recommended-article-item" href="/2024/03/20/c471c461c92a.html" title="Quantumult X下JS签到脚本开发全过程" rel="bookmark">
   <img src="https://cdn.inik.cc/gh/tidik/images/623038066.png" alt="Quantumult X下JS签到脚本开发全过程" class="!max-w-none">
   <span class="title">Quantumult X下JS签到脚本开发全过程</span>
-</a><a class="recommended-article-item" href="/2023/11/15/b7caeb428844.html" title="Centos7下安装docker和docker-compose" rel="bookmark">
-  <img src="https://cdn.inik.cc/gh/tidik/images/2069457946.png" alt="Centos7下安装docker和docker-compose" class="!max-w-none">
-  <span class="title">Centos7下安装docker和docker-compose</span>
+</a><a class="recommended-article-item" href="/2024/11/07/b51ef04e4811.html" title="搭建基于PicGO+Github的图床并配置国内加速" rel="bookmark">
+  <img src="https://cdn.inik.cc/gh/tidik/images/202411071539149.jpg" alt="搭建基于PicGO+Github的图床并配置国内加速" class="!max-w-none">
+  <span class="title">搭建基于PicGO+Github的图床并配置国内加速</span>
 </a></div>
    </div>
    <div class="recommended-mobile">
@@ -1009,73 +994,61 @@
    </div>
   </div>
 
-        
-            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-                
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2024/11/07/b51ef04e4811.html"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">搭建基于PicGO+Github的图床并配置国内加速</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="next"
-                        rel="next"
-                        href="/2024/04/02/a5caa24dd309.html"
-                        >
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">基于DNS解析分流实现CDN国内外加速与防御</span>
-                                <span class="post-nav-item">下一篇</span>
-                            </span>
-                            <span class="right arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/2024/11/07/b51ef04e4811.html">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">搭建基于PicGO+Github的图床并配置国内加速</span>
+						<span class="post-nav-item">上一篇</span>
+					</span>
+				</a>
+			</div>
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2024/04/02/a5caa24dd309.html">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">基于DNS解析分流实现CDN国内外加速与防御</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
 
 
-        
-    </div>
+		
+	</div>
 
-    
-        <div class="toc-content-container">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">目录</div>
-        <div class="page-title">基于内网部署GPT-SoVITS服务API调用文档</div>
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AFAPI%E8%B0%83%E7%94%A8"><span class="nav-text">客户端API调用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%89%A7%E8%A1%8C%E5%8F%82%E6%95%B0%E6%8C%87%E5%AE%9A%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91"><span class="nav-text">使用执行参数指定的参考音频</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GET"><span class="nav-text">GET</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#POST"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%89%A7%E8%A1%8C%E5%8F%82%E6%95%B0%E6%8C%87%E5%AE%9A%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91%E5%B9%B6%E8%AE%BE%E5%AE%9A%E5%88%86%E5%89%B2%E7%AC%A6%E5%8F%B7"><span class="nav-text">使用执行参数指定的参考音频并设定分割符号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GET-1"><span class="nav-text">GET</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#POST-1"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%8B%E5%8A%A8%E6%8C%87%E5%AE%9A%E5%BD%93%E6%AC%A1%E6%8E%A8%E7%90%86%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91"><span class="nav-text">手动指定当次推理所使用的参考音频</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GET-2"><span class="nav-text">GET</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#POST-2"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%8B%E5%8A%A8%E6%8C%87%E5%AE%9A%E5%BD%93%E6%AC%A1%E6%8E%A8%E7%90%86%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91%EF%BC%8C%E5%B9%B6%E6%8F%90%E4%BE%9B%E5%8F%82%E6%95%B0"><span class="nav-text">手动指定当次推理所使用的参考音频，并提供参数</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GET-3"><span class="nav-text">GET</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#POST-3"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84Axios%E8%B0%83%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="nav-text">简单的Axios调用示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-text">服务端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#api-py-%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E5%88%97%E8%A1%A8"><span class="nav-text">api.py 启动参数列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-text">运行前准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#debian-ubuntu-%E5%AE%89%E8%A3%85screen"><span class="nav-text">debian&#x2F;ubuntu 安装screen</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B0%E5%BB%BAscreen"><span class="nav-text">新建screen</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BF%80%E6%B4%BBconda%E7%8E%AF%E5%A2%83"><span class="nav-text">激活conda环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%90%AF%E5%8A%A8%E7%A4%BA%E4%BE%8B"><span class="nav-text">服务端启动示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%9D%E5%AD%98screen%E4%BC%9A%E8%AF%9D"><span class="nav-text">保存screen会话</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%9B%91%E5%90%AC%E7%AB%AF%E5%8F%A3%E4%BF%A1%E6%81%AF"><span class="nav-text">查看监听端口信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E6%94%BE%E9%98%B2%E7%81%AB%E5%A2%99%E7%AB%AF%E5%8F%A3"><span class="nav-text">开放防火墙端口</span></a></li></ol></li></ol>
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">目录</div>
+		<div class="page-title">基于内网部署GPT-SoVITS服务API调用文档</div>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AFAPI%E8%B0%83%E7%94%A8"><span class="nav-text">客户端API调用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%89%A7%E8%A1%8C%E5%8F%82%E6%95%B0%E6%8C%87%E5%AE%9A%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91"><span class="nav-text">使用执行参数指定的参考音频</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GET"><span class="nav-text">GET</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#POST"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%89%A7%E8%A1%8C%E5%8F%82%E6%95%B0%E6%8C%87%E5%AE%9A%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91%E5%B9%B6%E8%AE%BE%E5%AE%9A%E5%88%86%E5%89%B2%E7%AC%A6%E5%8F%B7"><span class="nav-text">使用执行参数指定的参考音频并设定分割符号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GET-1"><span class="nav-text">GET</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#POST-1"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%8B%E5%8A%A8%E6%8C%87%E5%AE%9A%E5%BD%93%E6%AC%A1%E6%8E%A8%E7%90%86%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91"><span class="nav-text">手动指定当次推理所使用的参考音频</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GET-2"><span class="nav-text">GET</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#POST-2"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%8B%E5%8A%A8%E6%8C%87%E5%AE%9A%E5%BD%93%E6%AC%A1%E6%8E%A8%E7%90%86%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%82%E8%80%83%E9%9F%B3%E9%A2%91%EF%BC%8C%E5%B9%B6%E6%8F%90%E4%BE%9B%E5%8F%82%E6%95%B0"><span class="nav-text">手动指定当次推理所使用的参考音频，并提供参数</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GET-3"><span class="nav-text">GET</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#POST-3"><span class="nav-text">POST</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84Axios%E8%B0%83%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="nav-text">简单的Axios调用示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-text">服务端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#api-py-%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E5%88%97%E8%A1%A8"><span class="nav-text">api.py 启动参数列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-text">运行前准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#debian-ubuntu-%E5%AE%89%E8%A3%85screen"><span class="nav-text">debian&#x2F;ubuntu 安装screen</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B0%E5%BB%BAscreen"><span class="nav-text">新建screen</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BF%80%E6%B4%BBconda%E7%8E%AF%E5%A2%83"><span class="nav-text">激活conda环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%90%AF%E5%8A%A8%E7%A4%BA%E4%BE%8B"><span class="nav-text">服务端启动示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%9D%E5%AD%98screen%E4%BC%9A%E8%AF%9D"><span class="nav-text">保存screen会话</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%9B%91%E5%90%AC%E7%AB%AF%E5%8F%A3%E4%BF%A1%E6%81%AF"><span class="nav-text">查看监听端口信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E6%94%BE%E9%98%B2%E7%81%AB%E5%A2%99%E7%AB%AF%E5%8F%A3"><span class="nav-text">开放防火墙端口</span></a></li></ol></li></ol>
 
-    </div>
+	</div>
 </div>
-        </div>
-    
+	</div>
+	
 </div>
+			</div>
 
+			
+		</div>
 
-
-                
-
-            </div>
-
-            
-
-        </div>
-
-        <div class="main-content-footer">
-            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
     <div class="info-container py-3 text-center">
         
         <div class="text-center">
@@ -1084,7 +1057,7 @@
               <span>2023</span>
               -
             
-            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Bachelor LEE</a>
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Bachelor LEE</a>
             
         </div>
         
@@ -1106,7 +1079,7 @@
         
         <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
             <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
-            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
         </div>
         
             <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
@@ -1152,121 +1125,98 @@
         
     </div>  
 </footer>
-        </div>
-    </div>
+		</div>
+	</div>
 
-    
-        <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="article-tools-list">
-        <!-- TOC aside toggle -->
-        
-            <li class="right-bottom-tools page-aside-toggle">
-                <i class="fa-regular fa-outdent"></i>
-            </li>
-        
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
 
-        <!-- go comment -->
-        
-    </ul>
+		<!-- go comment -->
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
 </div>
 
-        </div>
-    
-
-    <div class="right-side-tools-container">
-        <div class="side-tools-container">
-    <ul class="hidden-tools-list">
-        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
-            <i class="fa-regular fa-magnifying-glass-plus"></i>
-        </li>
-
-        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
-            <i class="fa-regular fa-magnifying-glass-minus"></i>
-        </li>
-
-        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
-            <i class="fa-regular fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-
-        
-
-        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
-            <i class="fa-regular fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="visible-tools-list">
-        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
-            <i class="fa-regular fa-cog fa-spin"></i>
-        </li>
-        
-            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
-                <i class="arrow-up fas fa-arrow-up"></i>
-                <span class="percent"></span>
-            </li>
-        
-        
-    </ul>
+	
+	<div class="search-pop-overlay">
+	<div class="popup search-popup">
+		<div class="search-header">
+			<span class="search-input-field-pre">
+				<i class="fa-solid fa-keyboard"></i>
+			</span>
+			<div class="search-input-container">
+				<input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="站内搜索您需要的内容..." spellcheck="false" type="search" class="search-input">
+			</div>
+			<span class="popup-btn-close">
+				<i class="fa-solid fa-times"></i>
+			</span>
+		</div>
+		<div id="search-result">
+			<div id="no-result">
+				<i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+			</div>
+		</div>
+	</div>
 </div>
-
-    </div>
-
-    <div class="image-viewer-container">
-    <img src="">
-</div>
-
-
-    
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fa-solid fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="站内搜索您需要的内容..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="popup-btn-close">
-                <i class="fa-solid fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-
-    
+	
 
 </main>
 
 
-    
-<script src="/js/libs/Swup.min.js"></script>
-
-<script src="/js/libs/SwupSlideTheme.min.js"></script>
-
-<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
-
-<script src="/js/libs/SwupProgressPlugin.min.js"></script>
-
-<script src="/js/libs/SwupScrollPlugin.min.js"></script>
-
-<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
-
+<script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/Swup.min.js" ></script><script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/SwupSlideTheme.min.js" ></script><script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/SwupScriptsPlugin.min.js" ></script><script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/SwupProgressPlugin.min.js" ></script><script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/SwupScrollPlugin.min.js" ></script><script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/SwupPreloadPlugin.min.js" ></script>
 <script>
     const swup = new Swup({
         plugins: [
@@ -1289,60 +1239,29 @@
 
 
 
+	<script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/tools/imageViewer.js" ></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/utils.js" ></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/main.js" ></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/layouts/navbarShrink.js" ></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/tools/scrollTopBottom.js" ></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/tools/lightDarkSwitch.js" ></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/layouts/categoryList.js" ></script>
+
+
+    <script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/tools/localSearch.js" ></script>
 
 
 
-<script src="/js/tools/imageViewer.js" type="module"></script>
-
-<script src="/js/utils.js" type="module"></script>
-
-<script src="/js/main.js" type="module"></script>
-
-<script src="/js/layouts/navbarShrink.js" type="module"></script>
-
-<script src="/js/tools/scrollTopBottom.js" type="module"></script>
-
-<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
-
-<script src="/js/layouts/categoryList.js" type="module"></script>
+    <script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/tools/codeBlock.js" ></script>
 
 
 
-    
-<script src="/js/tools/localSearch.js" type="module"></script>
+    <script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/layouts/lazyload.js" ></script>
 
 
 
-
-    
-<script src="/js/tools/codeBlock.js" type="module"></script>
-
-
-
-
-    
-<script src="/js/layouts/lazyload.js" type="module"></script>
+    <script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/tools/runtime.js" ></script>
+    <script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/odometer.min.js" ></script>
+    <link rel="stylesheet" href="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/assets/odometer-theme-minimal.css">
 
 
 
-
-    
-<script src="/js/tools/runtime.js"></script>
-
-    
-<script src="/js/libs/odometer.min.js"></script>
-
-    
-<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
-
-
-
-
-  
-<script src="/js/libs/Typed.min.js"></script>
-
-  
-<script src="/js/plugins/typed.js" type="module"></script>
+  <script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/Typed.min.js" ></script>
+  <script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/plugins/typed.js" ></script>
 
 
 
@@ -1353,24 +1272,16 @@
 
 
 
+    <script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/tools/tocToggle.js" data-swup-reload-script></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/layouts/toc.js" data-swup-reload-script></script><script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/plugins/tabs.js" data-swup-reload-script></script>
 
-    
-<script src="/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
 
-<script src="/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
-
-<script src="/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+<script  src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/libs/moment-with-locales.min.js" data-swup-reload-script></script>
+<script type="module" src="https://registry.npmmirror.com/hexo-theme-redefine/2.8.2/files/source/js/build/layouts/essays.js" data-swup-reload-script></script>
 
 
 
 
-<script src="/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
-
-
-<script src="/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
-
-
-
-
+	
 </body>
+
 </html>
